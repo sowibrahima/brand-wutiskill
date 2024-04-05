@@ -1,0 +1,364 @@
+{
+  "typography": {
+    "font": {
+      "family": {
+        "sans": {
+          "serif": {
+            "value": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+          }
+        },
+        "serif": {
+          "value": "{typography.font.family.sans.serif}"
+        },
+        "monospace": {
+          "value": "\"Roboto Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+        }
+      },
+      "size": {
+        "lg": {
+          "value": "calc({typography.font.size.base} * 1.25)"
+        },
+        "small": {
+          "base": {
+            "value": "0.875rem"
+          },
+          "x": {
+            "value": "0.75rem"
+          }
+        },
+        "lead": {
+          "value": "1.375rem"
+        },
+        "base": {
+          "value": "1.125rem",
+          "type": "dimension",
+          "source": "$font-size-base",
+          "description": "Base font size."
+        },
+        "h1": {
+          "value": "3rem",
+          "type": "dimension",
+          "source": "$h1-font-size",
+          "description": "Font size of heading level 1."
+        },
+        "h2": {
+          "value": "2.25rem",
+          "type": "dimension",
+          "source": "$h2-font-size",
+          "description": "Font size of heading level 2."
+        },
+        "h3": {
+          "value": "1.75rem",
+          "type": "dimension",
+          "source": "$h3-font-size",
+          "description": "Font size of heading level 3."
+        },
+        "h4": {
+          "value": "1.5rem",
+          "type": "dimension",
+          "source": "$h4-font-size",
+          "description": "Font size of heading level 4."
+        },
+        "h5": {
+          "value": "1.25rem",
+          "type": "dimension",
+          "source": "$h5-font-size",
+          "description": "Font size of heading level 5."
+        },
+        "h6": {
+          "value": "1.125rem",
+          "type": "dimension",
+          "source": "$h6-font-size",
+          "description": "Font size of heading level 6."
+        },
+        "display4": {
+          "value": "6.75rem",
+          "type": "dimension",
+          "source": "$display4-font-size",
+          "description": "Font size of display level 4."
+        },
+        "display3": {
+          "value": "5.625rem",
+          "type": "dimension",
+          "source": "$display3-font-size",
+          "description": "Font size of display level 3."
+        },
+        "display2": {
+          "value": "4.875rem",
+          "type": "dimension",
+          "source": "$display2-font-size",
+          "description": "Font size of display level 2."
+        },
+        "display1": {
+          "value": "3.75rem",
+          "type": "dimension",
+          "source": "$display1-font-size",
+          "description": "Font size of display level 1."
+        },
+        "display-subhead": {
+          "value": "3.125rem",
+          "type": "dimension",
+          "source": "$display-subhead-font-size",
+          "description": "Font size of display subhead."
+        },
+        "mobile": {
+          "h1": {
+            "value": "1.875rem",
+            "type": "dimension",
+            "source": "$h1-mobile-font-size",
+            "description": "Mobile font size of heading level 1."
+          },
+          "h2": {
+            "value": "1.75rem",
+            "type": "dimension",
+            "source": "$h2-mobile-font-size",
+            "description": "Mobile font size of heading level 2."
+          },
+          "h3": {
+            "value": "1.5rem",
+            "type": "dimension",
+            "source": "$h3-mobile-font-size",
+            "description": "Mobile font size of heading level 3."
+          },
+          "h4": {
+            "value": "1.375rem",
+            "type": "dimension",
+            "source": "$h4-mobile-font-size",
+            "description": "Mobile font size of heading level 4."
+          },
+          "display4": {
+            "value": "5.25rem",
+            "type": "dimension",
+            "source": "$display4-mobile-font-size",
+            "description": "Mobile font size of display level 4."
+          },
+          "display3": {
+            "value": "4.375rem",
+            "type": "dimension",
+            "source": "$display3-mobile-font-size",
+            "description": "Mobile font size of display level 3."
+          },
+          "display2": {
+            "value": "3.625rem",
+            "type": "dimension",
+            "source": "$display2-mobile-font-size",
+            "description": "Mobile font size of display level 2."
+          },
+          "display1": {
+            "value": "3rem",
+            "type": "dimension",
+            "source": "$display1-mobile-font-size",
+            "description": "Mobile font size of display level 1."
+          }
+        },
+        "body": {
+          "large": {
+            "value": "1.375rem",
+            "type": "dimension",
+            "source": "$body-large-font-size",
+            "description": "Font size of body large."
+          },
+          "default": {
+            "value": "1.125rem",
+            "type": "dimension",
+            "source": "$body-default-font-size",
+            "description": "Font size of body default."
+          },
+          "small": {
+            "value": "0.875rem",
+            "type": "dimension",
+            "source": "$body-small-font-size",
+            "description": "Font size of body small."
+          },
+          "extra-small": {
+            "value": "0.75rem",
+            "type": "dimension",
+            "source": "$body-extra-small-font-size",
+            "description": "Font size of body extra small."
+          },
+          "micro": {
+            "value": "0.6875rem",
+            "type": "dimension",
+            "source": "$body-micro-font-size",
+            "description": "Font size of body micro."
+          }
+        },
+        "heading": {
+          "large": {
+            "value": "1.375rem",
+            "type": "dimension",
+            "source": "$heading-large-font-size",
+            "description": "Font size of heading large."
+          },
+          "default": {
+            "value": "1.125rem",
+            "type": "dimension",
+            "source": "$heading-default-font-size",
+            "description": "Font size of heading default."
+          },
+          "small": {
+            "value": "0.875rem",
+            "type": "dimension",
+            "source": "$heading-small-font-size",
+            "description": "Font size of heading small."
+          },
+          "extra-small": {
+            "value": "0.75rem",
+            "type": "dimension",
+            "source": "$heading-extra-small-font-size",
+            "description": "Font size of heading extra small."
+          }
+        }
+      },
+      "weight": {
+        "lead": {
+          "value": "400"
+        },
+        "lighter": {
+          "value": "lighter",
+          "type": "fontWeight",
+          "source": "$font-weight-lighter",
+          "description": "Lighter font weight."
+        },
+        "light": {
+          "value": "300",
+          "type": "fontWeight",
+          "source": "$font-weight-light",
+          "description": "Light font weight."
+        },
+        "normal": {
+          "value": "400",
+          "type": "fontWeight",
+          "source": "$font-weight-normal",
+          "description": "Normal font weight."
+        },
+        "semi": {
+          "bold": {
+            "value": "500",
+            "type": "fontWeight",
+            "source": "$font-weight-semi-bold",
+            "description": "Semi-bold font weight."
+          }
+        },
+        "almost": {
+          "bold": {
+            "value": "600",
+            "type": "fontWeight",
+            "source": "$font-weight-almost-bold",
+            "description": "Almost bold font weight."
+          }
+        },
+        "bold": {
+          "value": "700",
+          "type": "fontWeight",
+          "source": "$font-weight-bold",
+          "description": "Bold font weight."
+        },
+        "bolder": {
+          "value": "bolder",
+          "type": "fontWeight",
+          "source": "$font-weight-bolder",
+          "description": "Bolder font weight."
+        },
+        "base": {
+          "value": "{typography.font.weight.normal}",
+          "type": "fontWeight",
+          "source": "$font-weight-base",
+          "description": "Basic font weight."
+        }
+      },
+      "line-height": {
+        "base": {
+          "value": "1rem",
+          "type": "dimension",
+          "source": "$font-line-height-base",
+          "description": "Basic line height."
+        },
+        "1": {
+          "value": "{typography.font.line-height.base}",
+          "type": "dimension",
+          "source": "$font-line-height-1",
+          "description": "Line height for 16px font size."
+        },
+        "2": {
+          "value": "1.25rem",
+          "type": "dimension",
+          "source": "$font-line-height-2",
+          "description": "Line height for 20px font size."
+        },
+        "3": {
+          "value": "1.5rem",
+          "type": "dimension",
+          "source": "$font-line-height-3",
+          "description": "Line height for 24px font size."
+        },
+        "4": {
+          "value": "1.75rem",
+          "type": "dimension",
+          "source": "$font-line-height-4",
+          "description": "Line height for 28px font size."
+        },
+        "5": {
+          "value": "2.25rem",
+          "type": "dimension",
+          "source": "$font-line-height-5",
+          "description": "Line height for 36px font size."
+        },
+        "6": {
+          "value": "2.625rem",
+          "type": "dimension",
+          "source": "$font-line-height-6",
+          "description": "Line height for 42px font size."
+        },
+        "7": {
+          "value": "3rem",
+          "type": "dimension",
+          "source": "$font-line-height-7",
+          "description": "Line height for 48px font size."
+        },
+        "8": {
+          "value": "3.375rem",
+          "type": "dimension",
+          "source": "$font-line-height-8",
+          "description": "Line height for 54px font size."
+        },
+        "9": {
+          "value": "3.75rem",
+          "type": "dimension",
+          "source": "$font-line-height-9",
+          "description": "Line height for 60px font size."
+        },
+        "10": {
+          "value": "4.25rem",
+          "type": "dimension",
+          "source": "$font-line-height-10",
+          "description": "Line height for 68px font size."
+        },
+        "11": {
+          "value": "4.875rem",
+          "type": "dimension",
+          "source": "$font-line-height-11",
+          "description": "Line height for 78px font size."
+        },
+        "12": {
+          "value": "5.25rem",
+          "type": "dimension",
+          "source": "$font-line-height-12",
+          "description": "Line height for 84px font size."
+        },
+        "13": {
+          "value": "5.625rem",
+          "type": "dimension",
+          "source": "$font-line-height-13",
+          "description": "Line height for 90px font size."
+        },
+        "14": {
+          "value": "6.75rem",
+          "type": "dimension",
+          "source": "$font-line-height-14",
+          "description": "Line height for 108px font size."
+        }
+      }
+    }
+  }
+}

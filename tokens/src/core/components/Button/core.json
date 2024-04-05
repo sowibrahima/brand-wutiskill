@@ -1,0 +1,32 @@
+{
+  "spacing": {
+    "btn": {
+      "focus": {
+        "gap": { "value": "2px" }
+      }
+    }
+  },
+  "typography": {
+    "btn": {
+      "font": {
+        "weight": { "value": "500" }
+      }
+    }
+  },
+  "size": {
+    "btn": {
+      "border": {
+        "radius": {
+          "base": { "value": "0px" },
+          "lg": { "value": "0px" },
+          "sm": { "value": "0px" }
+        }
+      },
+      "focus": {
+        "border-radius": {
+          "value": "0px"
+        }
+      }
+    }
+  }
+}

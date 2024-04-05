@@ -1,0 +1,226 @@
+{
+  "color": {
+    "btn": {
+      "text": {
+        "brand": {
+          "value": "{color.btn.bg.brand}",
+          "type": "color",
+          "source": "$btn-brand-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ]
+        },
+        "outline-brand": {
+          "value": "{color.primary.base}",
+          "type": "color",
+          "source": "$btn-brand-outline-color"
+        }
+      },
+      "bg": {
+        "brand": {
+          "value": "{color.primary.base}",
+          "type": "color",
+          "source": "$btn-brand-bg"
+        },
+        "outline-brand": {
+          "value": "transparent",
+          "type": "color",
+          "source": "$btn-brand-outline-bg"
+        }
+      },
+      "border": {
+        "brand": {
+          "value": "{color.btn.bg.brand}",
+          "type": "color",
+          "source": "$btn-brand-border-color"
+        },
+        "outline-brand": {
+          "value": "{color.primary.base}",
+          "type": "color",
+          "source": "$btn-brand-outline-border-color"
+        }
+      },
+      "hover": {
+        "text": {
+          "brand": {
+            "value": "{color.btn.hover.bg.brand}",
+            "type": "color",
+            "source": "$btn-brand-hover-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          },
+          "outline-brand": {
+            "value": "{color.theme.hover.brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-hover-color"
+          }
+        },
+        "bg": {
+          "brand": {
+            "value": "{color.theme.hover.brand}",
+            "type": "color",
+            "source": "$btn-brand-hover-bg"
+          },
+          "outline-brand": {
+            "value": "{color.primary.100}",
+            "type": "color",
+            "source": "$btn-brand-outline-hover-bg"
+          }
+        },
+        "border": {
+          "brand": {
+            "value": "{color.theme.hover.brand}",
+            "type": "color",
+            "source": "$btn-brand-hover-border-color"
+          },
+          "outline-brand": {
+            "value": "{color.primary.900}",
+            "type": "color",
+            "source": "$btn-brand-outline-hover-border-color"
+          }
+        }
+      },
+      "active": {
+        "text": {
+          "brand": {
+            "value": "{color.btn.active.bg.brand}",
+            "type": "color",
+            "source": "$btn-brand-active-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          },
+          "outline-brand": {
+            "value": "{color.btn.active.bg.outline-brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-active-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          }
+        },
+        "bg": {
+          "brand": {
+            "value": "{color.theme.active.brand}",
+            "type": "color",
+            "source": "$btn-brand-active-bg"
+          },
+          "outline-brand": {
+            "value": "{color.theme.bg.brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-active-bg"
+          }
+        },
+        "border": {
+          "brand": {
+            "value": "{color.theme.active.brand}",
+            "type": "color",
+            "source": "$btn-brand-active-border-color"
+          },
+          "outline-brand": {
+            "value": "{color.theme.active.brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-active-border-color"
+          }
+        }
+      },
+      "focus": {
+        "text": {
+          "brand": {
+            "value": "{color.btn.text.brand}",
+            "type": "color",
+            "source": "$btn-brand-focus-color"
+          },
+          "outline-brand": {
+            "value": "{color.btn.text.outline-brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-focus-color"
+          }
+        },
+        "border": {
+          "brand": {
+            "value": "{color.btn.border.brand}",
+            "type": "color",
+            "source": "$btn-brand-focus-border-color"
+          },
+          "outline-brand": {
+            "value": "{color.btn.border.outline-brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-focus-border-color"
+          }
+        },
+        "outline": {
+          "brand": {
+            "value": "{color.theme.focus.brand}",
+            "type": "color",
+            "source": "$btn-brand-focus-focus-outline-color"
+          },
+          "outline-brand": {
+            "value": "{color.theme.focus.brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-focus-outline-color"
+          }
+        },
+        "bg": {
+          "brand": {
+            "value": "{color.btn.bg.brand}",
+            "type": "color",
+            "source": "$btn-brand-focus-bg"
+          },
+          "outline-brand": {
+            "value": "inherit",
+            "type": "color",
+            "source": "$btn-brand-outline-focus-bg"
+          }
+        }
+      },
+      "disabled": {
+        "text": {
+          "brand": {
+            "value": "{color.btn.text.brand}",
+            "type": "color",
+            "source": "$btn-brand-disabled-color"
+          },
+          "outline-brand": {
+            "value": "{color.btn.hover.text.outline-brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-disabled-color"
+          }
+        },
+        "bg": {
+          "brand": {
+            "value": "{color.btn.bg.brand}",
+            "type": "color",
+            "source": "$btn-brand-disabled-bg"
+          },
+          "outline-brand": {
+            "value": "inherit",
+            "type": "color",
+            "source": "$btn-brand-outline-disabled-bg"
+          }
+        },
+        "border": {
+          "brand": {
+            "value": "{color.btn.border.brand}",
+            "type": "color",
+            "source": "$btn-brand-disabled-border-color"
+          },
+          "outline-brand": {
+            "value": "{color.btn.hover.text.outline-brand}",
+            "type": "color",
+            "source": "$btn-brand-outline-disabled-border-color"
+          }
+        }
+      }
+    }
+  }
+}

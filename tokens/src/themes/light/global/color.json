@@ -1,0 +1,1308 @@
+{
+  "color": {
+    "blue": { "value": "#00688D" },
+    "red": { "value": "#AB0D02" },
+    "green": { "value": "#0D7D4D" },
+    "yellow": { "value": "#D6B600" },
+    "gray": {
+      "base": {
+        "value": "#EBEBEB",
+        "type": "color",
+        "source": "$gray",
+        "description": "Basic gray color."
+      },
+      "100": {
+        "value": "{color.gray.base}",
+        "type": "color",
+        "source": "$gray-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Gray color of level 100."
+      },
+      "200": {
+        "value": "#CCCCCC",
+        "type": "color",
+        "source": "$gray-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Gray color of level 200."
+      },
+      "300": {
+        "value": "#ADADAD",
+        "type": "color",
+        "source": "$gray-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Gray color of level 300."
+      },
+      "400": {
+        "value": "#8F8F8F",
+        "type": "color",
+        "source": "$gray-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Gray color of level 400."
+      },
+      "500": {
+        "value": "#707070",
+        "type": "color",
+        "source": "$gray-500",
+        "description": "Gray color of level 500."
+      },
+      "600": {
+        "value": "#5C5C5C",
+        "type": "color",
+        "source": "$gray-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Gray color of level 600."
+      },
+      "700": {
+        "value": "#454545",
+        "type": "color",
+        "source": "$gray-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Gray color of level 700."
+      },
+      "800": {
+        "value": "#333333",
+        "type": "color",
+        "source": "$gray-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Gray color of level 800."
+      },
+      "900": {
+        "value": "#212529",
+        "type": "color",
+        "source": "$gray-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Gray color of level 900."
+      }
+    },
+    "accent": {
+      "a": {
+        "base": {
+          "value": "#DFF9F2",
+          "type": "color",
+          "source": "$accent-a",
+          "description": "Accent-a color."
+        },
+        "100": {
+          "value": "{color.accent.a.base}",
+          "type": "color",
+          "source": "$accent-a-100",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.94"
+            }
+          ],
+          "description": "Accent-a color of level 100."
+        },
+        "200": {
+          "value": "#BEF4E5",
+          "type": "color",
+          "source": "$accent-a-200",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.75"
+            }
+          ],
+          "description": "Accent-a color of level 200."
+        },
+        "300": {
+          "value": "#9EEED9",
+          "type": "color",
+          "source": "$accent-a-300",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.50"
+            }
+          ],
+          "description": "Accent-a color of level 300."
+        },
+        "400": {
+          "value": "#7DE9CC",
+          "type": "color",
+          "source": "$accent-a-400",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.25"
+            }
+          ],
+          "description": "Accent-a color of level 400."
+        },
+        "500": {
+          "value": "#5DE3BF",
+          "type": "color",
+          "source": "$accent-a-500",
+          "description": "Accent-a color of level 500."
+        },
+        "600": {
+          "value": "#4AB699",
+          "type": "color",
+          "source": "$accent-a-600",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.10"
+            }
+          ],
+          "description": "Accent-a color of level 600."
+        },
+        "700": {
+          "value": "#388873",
+          "type": "color",
+          "source": "$accent-a-700",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.20"
+            }
+          ],
+          "description": "Accent-a color of level 700."
+        },
+        "800": {
+          "value": "#255B4C",
+          "type": "color",
+          "source": "$accent-a-800",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.25"
+            }
+          ],
+          "description": "Accent-a color of level 800."
+        },
+        "900": {
+          "value": "#132D26",
+          "type": "color",
+          "source": "$accent-a-900",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.30"
+            }
+          ],
+          "description": "Accent-a color of level 900."
+        }
+      },
+      "b": {
+        "base": {
+          "value": "#FBEDF2",
+          "type": "color",
+          "source": "$accent-b",
+          "description": "Accent-b color."
+        },
+        "100": {
+          "value": "{color.accent.b.base}",
+          "type": "color",
+          "source": "$accent-b-100",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.94"
+            }
+          ],
+          "description": "Accent-b color of level 100."
+        },
+        "200": {
+          "value": "#F7DCE4",
+          "type": "color",
+          "source": "$accent-b-200",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.75"
+            }
+          ],
+          "description": "Accent-b color of level 200."
+        },
+        "300": {
+          "value": "#F3CAD7",
+          "type": "color",
+          "source": "$accent-b-300",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.50"
+            }
+          ],
+          "description": "Accent-b color of level 300."
+        },
+        "400": {
+          "value": "#EFB9C9",
+          "type": "color",
+          "source": "$accent-b-400",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "white",
+              "amount": "0.25"
+            }
+          ],
+          "description": "Accent-b color of level 400."
+        },
+        "500": {
+          "value": "#EBA7BC",
+          "type": "color",
+          "source": "$accent-b-500",
+          "description": "Accent-b color of level 500."
+        },
+        "600": {
+          "value": "#BC8696",
+          "type": "color",
+          "source": "$accent-b-600",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.10"
+            }
+          ],
+          "description": "Accent-b color of level 600."
+        },
+        "700": {
+          "value": "#8D6471",
+          "type": "color",
+          "source": "$accent-b-700",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.20"
+            }
+          ],
+          "description": "Accent-b color of level 700."
+        },
+        "800": {
+          "value": "#5E434B",
+          "type": "color",
+          "source": "$accent-b-800",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.25"
+            }
+          ],
+          "description": "Accent-b color of level 800."
+        },
+        "900": {
+          "value": "#2F2126",
+          "type": "color",
+          "source": "$accent-b-900",
+          "modify": [
+            {
+              "type": "mix",
+              "otherColor": "black",
+              "amount": "0.30"
+            }
+          ],
+          "description": "Accent-b color of level 900."
+        }
+      }
+    },
+    "primary": {
+      "base": {
+        "value": "#F0F2F2",
+        "type": "color",
+        "source": "$primary",
+        "description": "Basic primary color."
+      },
+      "100": {
+        "value": "{color.primary.base}",
+        "type": "color",
+        "source": "$primary-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Primary color of level 100."
+      },
+      "200": {
+        "value": "#BFC9CA",
+        "type": "color",
+        "source": "$primary-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Primary color of level 200."
+      },
+      "300": {
+        "value": "#2D494E",
+        "type": "color",
+        "source": "$primary-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Primary color of level 300."
+      },
+      "400": {
+        "value": "#0E3639",
+        "type": "color",
+        "source": "$primary-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Primary color of level 400."
+      },
+      "500": {
+        "value": "#00262B",
+        "type": "color",
+        "source": "$primary-500",
+        "description": "Primary color of level 500."
+      },
+      "600": {
+        "value": "#002326",
+        "type": "color",
+        "source": "$primary-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Primary color of level 600."
+      },
+      "700": {
+        "value": "#002121",
+        "type": "color",
+        "source": "$primary-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Primary color of level 700."
+      },
+      "800": {
+        "value": "#001D20",
+        "type": "color",
+        "source": "$primary-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Primary color of level 800."
+      },
+      "900": {
+        "value": "#001B1E",
+        "type": "color",
+        "source": "$primary-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Primary color of level 900."
+      }
+    },
+    "brand": {
+      "base": {
+        "value": "#F49974",
+        "type": "color",
+        "source": "$brand",
+        "description": "Basic brand color."
+      },
+      "100": {
+        "value": "{color.brand.base}",
+        "type": "color",
+        "source": "$brand-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Brand color of level 100."
+      },
+      "200": {
+        "value": "#EE855A",
+        "type": "color",
+        "source": "$brand-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Brand color of level 200."
+      },
+      "300": {
+        "value": "#E76F3F",
+        "type": "color",
+        "source": "$brand-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Brand color of level 300."
+      },
+      "400": {
+        "value": "#DF5924",
+        "type": "color",
+        "source": "$brand-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Brand color of level 400."
+      },
+      "500": {
+        "value": "#D74000",
+        "type": "color",
+        "source": "$brand-500",
+        "description": "Brand color of level 500."
+      },
+      "600": {
+        "value": "#BC3A05",
+        "type": "color",
+        "source": "$brand-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Brand color of level 600."
+      },
+      "700": {
+        "value": "#A33508",
+        "type": "color",
+        "source": "$brand-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Brand color of level 700."
+      },
+      "800": {
+        "value": "#8B2F0B",
+        "type": "color",
+        "source": "$brand-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Brand color of level 800."
+      },
+      "900": {
+        "value": "#73290C",
+        "type": "color",
+        "source": "$brand-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Brand color of level 900."
+      }
+    },
+    "success": {
+      "base": {
+        "value": "#F2FAF7",
+        "type": "color",
+        "source": "$success",
+        "description": "Basic success color."
+      },
+      "100": {
+        "value": "{color.success.base}",
+        "type": "color",
+        "source": "$success-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Success color of level 100."
+      },
+      "200": {
+        "value": "#BBE6D7",
+        "type": "color",
+        "source": "$success-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Success color of level 200."
+      },
+      "300": {
+        "value": "#30A171",
+        "type": "color",
+        "source": "$success-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Success color of level 300."
+      },
+      "400": {
+        "value": "#4A9E7A",
+        "type": "color",
+        "source": "$success-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Success color of level 400."
+      },
+      "500": {
+        "value": "#0D7D4D",
+        "type": "color",
+        "source": "$success-500",
+        "description": "Success color of level 500."
+      },
+      "600": {
+        "value": "#0C7145",
+        "type": "color",
+        "source": "$success-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Success color of level 600."
+      },
+      "700": {
+        "value": "#175B3C",
+        "type": "color",
+        "source": "$success-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Success color of level 700."
+      },
+      "800": {
+        "value": "#0A5E3A",
+        "type": "color",
+        "source": "$success-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Success color of level 800."
+      },
+      "900": {
+        "value": "#0F4D0F",
+        "type": "color",
+        "source": "$success-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Success color of level 900."
+      }
+    },
+    "info": {
+      "base": {
+        "value": "#EFF8FA",
+        "type": "color",
+        "source": "$info",
+        "description": "Basic info color."
+      },
+      "100": {
+        "value": "{color.info.base}",
+        "type": "color",
+        "source": "$info-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Info color of level 100."
+      },
+      "200": {
+        "value": "#9CD2E6",
+        "type": "color",
+        "source": "$info-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Info color of level 200."
+      },
+      "300": {
+        "value": "#1C8DBE",
+        "type": "color",
+        "source": "$info-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Info color of level 300."
+      },
+      "400": {
+        "value": "#408EAA",
+        "type": "color",
+        "source": "$info-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Info color of level 400."
+      },
+      "500": {
+        "value": "#00688D",
+        "type": "color",
+        "source": "$info-500",
+        "description": "Info color of level 500."
+      },
+      "600": {
+        "value": "#005E7F",
+        "type": "color",
+        "source": "$info-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Info color of level 600."
+      },
+      "700": {
+        "value": "#004972",
+        "type": "color",
+        "source": "$info-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Info color of level 700."
+      },
+      "800": {
+        "value": "#004E6A",
+        "type": "color",
+        "source": "$info-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Info color of level 800."
+      },
+      "900": {
+        "value": "#002F4A",
+        "type": "color",
+        "source": "$info-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Info color of level 900."
+      }
+    },
+    "warning": {
+      "base": {
+        "value": "#FFFADB",
+        "type": "color",
+        "source": "$warning",
+        "description": "Basic warning color."
+      },
+      "100": {
+        "value": "{color.warning.base}",
+        "type": "color",
+        "source": "$warning-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Warning color of level 100."
+      },
+      "200": {
+        "value": "#FFEA75",
+        "type": "color",
+        "source": "$warning-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Warning color of level 200."
+      },
+      "300": {
+        "value": "#F0CC00",
+        "type": "color",
+        "source": "$warning-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Warning color of level 300."
+      },
+      "400": {
+        "value": "#E0C840",
+        "type": "color",
+        "source": "$warning-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Warning color of level 400."
+      },
+      "500": {
+        "value": "#D6B600",
+        "type": "color",
+        "source": "$warning-500",
+        "description": "Warning color of level 500."
+      },
+      "600": {
+        "value": "#C1A400",
+        "type": "color",
+        "source": "$warning-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Warning color of level 600."
+      },
+      "700": {
+        "value": "#998200",
+        "type": "color",
+        "source": "$warning-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Warning color of level 700."
+      },
+      "800": {
+        "value": "#A18900",
+        "type": "color",
+        "source": "$warning-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Warning color of level 800."
+      },
+      "900": {
+        "value": "#7A6800",
+        "type": "color",
+        "source": "$warning-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Warning color of level 900."
+      }
+    },
+    "danger": {
+      "base": {
+        "value": "#FCF1F4",
+        "type": "color",
+        "source": "$danger",
+        "description": "Basic danger color."
+      },
+      "100": {
+        "value": "{color.danger.base}",
+        "type": "color",
+        "source": "$danger-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Danger color of level 100."
+      },
+      "200": {
+        "value": "#F3AEA9",
+        "type": "color",
+        "source": "$danger-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Danger color of level 200."
+      },
+      "300": {
+        "value": "#CA3A2F",
+        "type": "color",
+        "source": "$danger-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Danger color of level 300."
+      },
+      "400": {
+        "value": "#C04A41",
+        "type": "color",
+        "source": "$danger-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Danger color of level 400."
+      },
+      "500": {
+        "value": "#AB0D02",
+        "type": "color",
+        "source": "$danger-500",
+        "description": "Danger color of level 500."
+      },
+      "600": {
+        "value": "#9A0C02",
+        "type": "color",
+        "source": "$danger-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Danger color of level 600."
+      },
+      "700": {
+        "value": "#951C13",
+        "type": "color",
+        "source": "$danger-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Danger color of level 700."
+      },
+      "800": {
+        "value": "#800A02",
+        "type": "color",
+        "source": "$danger-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Danger color of level 800."
+      },
+      "900": {
+        "value": "#690E07",
+        "type": "color",
+        "source": "$danger-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Danger color of level 900."
+      }
+    },
+    "light": {
+      "base": {
+        "value": "#F9F8F6",
+        "type": "color",
+        "source": "$light",
+        "description": "Basic light color."
+      },
+      "100": {
+        "value": "{color.light.base}",
+        "type": "color",
+        "source": "$light-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Light color of level 100."
+      },
+      "200": {
+        "value": "#F3F1ED",
+        "type": "color",
+        "source": "$light-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Light color of level 200."
+      },
+      "300": {
+        "value": "#EDEBE4",
+        "type": "color",
+        "source": "$light-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Light color of level 300."
+      },
+      "400": {
+        "value": "#E7E4DB",
+        "type": "color",
+        "source": "$light-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Light color of level 400."
+      },
+      "500": {
+        "value": "#E1DDD2",
+        "type": "color",
+        "source": "$light-500",
+        "description": "Light color of level 500."
+      },
+      "600": {
+        "value": "#B4B1A8",
+        "type": "color",
+        "source": "$light-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Light color of level 600."
+      },
+      "700": {
+        "value": "#87857E",
+        "type": "color",
+        "source": "$light-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Light color of level 700."
+      },
+      "800": {
+        "value": "#5A5854",
+        "type": "color",
+        "source": "$light-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Light color of level 800."
+      },
+      "900": {
+        "value": "#2D2C2A",
+        "type": "color",
+        "source": "$light-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Light color of level 900."
+      }
+    },
+    "dark": {
+      "base": {
+        "value": "#D2DAD8",
+        "type": "color",
+        "source": "$dark",
+        "description": "Basic dark color."
+      },
+      "100": {
+        "value": "{color.dark.base}",
+        "type": "color",
+        "source": "$dark-100",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.94"
+          }
+        ],
+        "description": "Dark color of level 100."
+      },
+      "200": {
+        "value": "#BFC9CA",
+        "type": "color",
+        "source": "$dark-200",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.75"
+          }
+        ],
+        "description": "Dark color of level 200."
+      },
+      "300": {
+        "value": "#798F8B",
+        "type": "color",
+        "source": "$dark-300",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.50"
+          }
+        ],
+        "description": "Dark color of level 300."
+      },
+      "400": {
+        "value": "#4C6A64",
+        "type": "color",
+        "source": "$dark-400",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "white",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Dark color of level 400."
+      },
+      "500": {
+        "value": "#1F453D",
+        "type": "color",
+        "source": "$dark-500",
+        "description": "Dark color of level 500."
+      },
+      "600": {
+        "value": "#193731",
+        "type": "color",
+        "source": "$dark-600",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.10"
+          }
+        ],
+        "description": "Dark color of level 600."
+      },
+      "700": {
+        "value": "#132925",
+        "type": "color",
+        "source": "$dark-700",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.20"
+          }
+        ],
+        "description": "Info color of level 700."
+      },
+      "800": {
+        "value": "#0C1C18",
+        "type": "color",
+        "source": "$dark-800",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.25"
+          }
+        ],
+        "description": "Dark color of level 800."
+      },
+      "900": {
+        "value": "#060E0C",
+        "type": "color",
+        "source": "$dark-900",
+        "modify": [
+          {
+            "type": "mix",
+            "otherColor": "black",
+            "amount": "0.30"
+          }
+        ],
+        "description": "Dark color of level 900."
+      }
+    }
+  }
+}

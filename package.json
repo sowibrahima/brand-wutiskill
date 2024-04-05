@@ -1,0 +1,27 @@
+{
+  "name": "@edx/elm-edx.org",
+  "version": "1.0.0",
+  "description": "A package containing brand elements and SASS themes for edx.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edx/elm-edx.org.git"
+  },
+  "author": "edX",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/edx/elm-edx.org/issues"
+  },
+  "homepage": "https://github.com/edx/elm-edx.org#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build-tokens": "paragon build-tokens --source ./tokens/src --build-dir ./paragon/css --source-tokens-only",
+    "build-scss": "paragon build-scss --corePath ./paragon/core.scss --themesPath ./paragon/css/themes --defaultThemeVariants light",
+    "build": "make build",
+    "paragon:help": "paragon help"
+  },
+  "devDependencies": {
+    "@edx/paragon": "22.0.0-alpha.13"
+  }
+}
