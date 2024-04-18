@@ -1,5 +1,5 @@
 {
-  "name": "@edx/elm-edx.org",
+  "name": "@edx/elm-theme",
   "version": "1.0.0",
   "description": "A package containing brand elements and SASS themes for edx.org",
   "repository": {
