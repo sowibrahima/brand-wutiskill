@@ -4,14 +4,14 @@
   "description": "A package containing brand elements and SASS themes for edx.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/elm-edx.org.git"
+    "url": "git+https://github.com/edx/elm-theme.git"
   },
   "author": "edX",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/edx/elm-edx.org/issues"
+    "url": "https://github.com/edx/elm-theme/issues"
   },
-  "homepage": "https://github.com/edx/elm-edx.org#readme",
+  "homepage": "https://github.com/edx/elm-theme#readme",
   "publishConfig": {
     "access": "public"
   },
