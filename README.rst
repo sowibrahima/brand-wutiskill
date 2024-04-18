@@ -1,5 +1,5 @@
 ==================
-@edx/elm-edx.org
+@edx/elm-theme
 ==================
 
 This project contains branding assets and themes for edx.org. It is an updated implementation of the branding interface defined in the package @edx/elm.
@@ -15,13 +15,13 @@ Versioned with npm. Including this project this way will allow you to control th
 
 .. code-block:: bash
 
-  npm install --save @edx/brand@npm:@edx/elm-edx.org
+  npm install --save @edx/brand@npm:@edx/elm-theme
 
 Unversioned with Github. Including this project this way will pull in the latest version of it whenever a project's requirements are installed. This alleviates the need to manually pull in updates. The draw back is that if a breaking change is inadvertently introduced it is likely to gum up your pipeline or create a visual bug.
 
 .. code-block:: bash
 
-  npm install --save @edx/brand@git+https://git@github.com/edx/elm-edx.org#master
+  npm install --save @edx/brand@git+https://git@github.com/edx/elm-theme#main
 
 Import assets from this package in a consuming node application:
 
@@ -144,4 +144,4 @@ Building design tokens
 Publishing with Semantic Release
 --------------------------------
 
-This project is published to npm with Semantic Release. When a pull request is merged to master Semantic Release reads the commit messages to determine whether to make a new patch. minor, or major release of this package. For more info see https://github.com/semantic-release/semantic-release#how-does-it-work
+This project is published to npm with Semantic Release. When a pull request is merged to main Semantic Release reads the commit messages to determine whether to make a new patch. minor, or major release of this package. For more info see https://github.com/semantic-release/semantic-release#how-does-it-work
