@@ -10,8 +10,8 @@
     "dropdown": {
       "padding": {
         "y": {
-          "base": { "value": ".5rem" },
-          "item": { "value": ".625rem" }
+          "base": { "value": "{spacing.spacer.2}" },
+          "item": { "value": "{spacing.spacer.2,5}" }
         }
       }
     }
