@@ -6,7 +6,7 @@ This project contains elm-theme branding assets and styles for edx.  It can be u
 
 It uses `design tokens <https://github.com/amzn/style-dictionary>`_ to define colors, spacing, typography, and other fundamental styles. These tokens get compiled into css classes that are exposed through the npm package.  Users can reference these classes in their projects.
 
-Elm-theme can be used alone or in conjunction with paragon.  Because paragon is a dependency, elm-theme already contains all default paragon css classes.  It just overrides certain classes with elm-theme styles.  However elm-theme on its own does not give users the ability to use paragon components. 
+Elm-theme can be used alone or in conjunction with paragon.  Because paragon is a dependency, elm-theme already contains all core paragon css classes.  It just overrides certain classes with elm-theme styles.  However elm-theme on its own does not give users the ability to use paragon components. 
 
 Elm-theme shouldn't be used with other themes (like the `edx-brand <https://github.com/edx/brand-edx.org>`_ theme).
 
