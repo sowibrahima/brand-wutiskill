@@ -2,7 +2,13 @@
 @edx/elm-theme
 ==================
 
-This project contains branding assets and themes for edx.org. It is an updated implementation of the branding interface defined in the package @edx/elm.
+This project contains elm-theme branding assets and styles for edx.  It can be used to ensure that a project coheres to the elm visual style.  
+
+It uses [design tokens](https://github.com/amzn/style-dictionary) to define colors, spacing, typography, and other fundamental styles. These tokens get compiled into css classes that are exposed through the npm package.  Users can reference these classes in their projects.
+
+Elm-theme can be used alone or in conjunction with paragon.  Because paragon is a dependency, elm-theme already contains all default paragon css classes.  It just overrides certain classes with elm-theme styles.  However elm-theme on its own does not give users the ability to use paragon components. 
+
+Elm-theme shouldn't be used with other themes (like the [edx-brand](https://github.com/edx/brand-edx.org) theme).
 
 -----
 Usage
@@ -15,19 +21,19 @@ Versioned with npm. Including this project this way will allow you to control th
 
 .. code-block:: bash
 
-  npm install --save @edx/brand@npm:@edx/elm-theme
+  npm install --save @edx/elm-theme@npm:@edx/elm-theme
 
 Unversioned with Github. Including this project this way will pull in the latest version of it whenever a project's requirements are installed. This alleviates the need to manually pull in updates. The draw back is that if a breaking change is inadvertently introduced it is likely to gum up your pipeline or create a visual bug.
 
 .. code-block:: bash
 
-  npm install --save @edx/brand@git+https://git@github.com/edx/elm-theme#main
+  npm install --save @edx/elm-theme@git+https://git@github.com/edx/elm-theme#main
 
 Import assets from this package in a consuming node application:
 
 .. code-block:: javascript
 
-  import logo from '@edx/brand/logo.svg';
+  import logo from '@edx/elm-theme/logo.svg';
 
 --------------
 Images & Logos
@@ -42,10 +48,10 @@ edX Logo
 
 .. code-block:: javascript
 
-  import logo from '@edx/brand/logo.svg';
+  import logo from '@edx/elm-theme/logo.svg';
 
   // Or the png version
-  import logo from '@edx/brand/logo.png';
+  import logo from '@edx/elm-theme/logo.png';
 
 edX Logo with ®
 ---------------
@@ -56,10 +62,10 @@ edX Logo with ®
 
 .. code-block:: javascript
 
-  import logo from '@edx/brand/logo-trademark.svg';
+  import logo from '@edx/elm-theme/logo-trademark.svg';
 
   // Or the png version
-  import logo from '@edx/brand/logo-trademark.png';
+  import logo from '@edx/elm-theme/logo-trademark.png';
 
 edX Logo in white
 -----------------
@@ -70,10 +76,10 @@ edX Logo in white
 
 .. code-block:: javascript
 
-  import logo from '@edx/brand/logo-white.svg';
+  import logo from '@edx/elm-theme/logo-white.svg';
 
   // Or the png version
-  import logo from '@edx/brand/logo-white.png';
+  import logo from '@edx/elm-theme/logo-white.png';
 
 edX Favicon
 -----------------
@@ -84,7 +90,7 @@ edX Favicon
 
 .. code-block:: javascript
 
-  // @edx/brand/favicon.ico;
+  // @edx/elm-theme/favicon.ico;
 
 Default fallback image for `Card.ImageCap` component
 --------
@@ -96,22 +102,24 @@ Default fallback image for `Card.ImageCap` component
 .. code-block:: javascript
 
   // the png version
-  import cardFallbackImg from '@edx/brand/paragon/images/card-imagecap-fallback.png';
+  import cardFallbackImg from '@edx/elm-theme/paragon/images/card-imagecap-fallback.png';
 
 -------------
-Paragon Theme
+Including Elm Styles in a Project
 -------------
 
 You can use the theme in two ways:
 
 1. this repo builds and publishes its own CSS files (located in the `dist` directory) by including and overriding Paragon's styles,
    so you can just inject them into your application **without** needing to import / compile Paragon's style separately
-2. compile the styles on your own in your application
+2. compile the styles on your own in your application - override paragon defaults with elm styles
+
   .. code-block:: sass
 
-    @import "@edx/brand/paragon/core";
-    @import "@edx/brand/paragon/css/themes/light/variables";
-    @import "@edx/brand/paragon/css/themes/light/utility-classes";
+    @import '@edx/elm-theme/paragon/fonts.scss';
+    @import '@edx/elm-theme/paragon/variables.scss';
+    @import '@openedx/paragon/scss/core/core.scss';
+    @import '@edx/elm-theme/paragon/overrides.scss';
 
 
 -------------------------------------
@@ -120,7 +128,7 @@ Theming with Paragon's Design Tokens
 Starting from `v21` Paragon uses style-dictionary to build CSS variables from design tokens (i.e. JSON files), Paragon
 allows to override design tokens values before building CSS variables allowing to apply custom theme.
 
-See `tokens` directory for tokens that edX.org theme overrides. This directory should follow the same folder/JSON structure as is used on whatever version of Paragon is installed in this repository. These JSON files are deep-merged with the default/standard Paragon design tokens.
+See `tokens` directory for tokens that the elm theme overrides. This directory should follow the same folder/JSON structure as is used on whatever version of Paragon is installed in this repository. These JSON files are deep-merged with the default/standard Paragon design tokens.
 Note that some tokens have `"modify": null` property specified, this is done to disable default Paragon's behaviour that modifies this specific token in some way, read more about token's modifications during build time here[TODO: add link to Paragon readme].
 
 Building design tokens
