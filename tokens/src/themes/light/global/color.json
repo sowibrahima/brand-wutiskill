@@ -4,6 +4,7 @@
     "red": { "value": "#AB0D02" },
     "green": { "value": "#0D7D4D" },
     "yellow": { "value": "#D6B600" },
+    "white": { "value": "#FFFFFF" },
     "gray": {
       "base": {
         "value": "#EBEBEB",

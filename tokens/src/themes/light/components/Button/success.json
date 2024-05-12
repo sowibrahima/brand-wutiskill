@@ -1,56 +1,229 @@
 {
   "color": {
     "btn": {
+      "text": {
+        "success": {
+          "value": "{color.btn.bg.success}",
+          "type": "color",
+          "source": "$btn-success-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ]
+        },
+        "outline-success": {
+          "value": "{color.btn.bg.success}",
+          "type": "color",
+          "source": "$btn-success-outline-color"
+        }
+      },
+      "bg": {
+        "success": {
+          "value": "{color.success.600}",
+          "type": "color",
+          "source": "$btn-success-bg"
+        },
+        "outline-success": {
+          "value": "{color.white}",
+          "type": "color",
+          "source": "$btn-success-outline-bg"
+        }
+      },
       "border": {
-        "success": { "value": "{color.light.300}" },
-        "outline-success": { "value": "{color.light.300}" }
+        "success": {
+          "value": "{color.btn.bg.success}",
+          "type": "color",
+          "source": "$btn-success-border-color"
+        },
+        "outline-success": {
+          "value": "{color.btn.bg.success}",
+          "type": "color",
+          "source": "$btn-success-outline-border-color"
+        }
       },
       "hover": {
         "text": {
-          "outline-success": { "value": "{color.white}" }
+          "success": {
+            "value": "{color.btn.hover.bg.success}",
+            "type": "color",
+            "source": "$btn-success-hover-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          },
+          "outline-success": {
+            "value": "{color.success.600}",
+            "type": "color",
+            "source": "$btn-success-outline-hover-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          }
         },
         "bg": {
-          "outline-success": { "value": "{color.success.base}" }
+          "success": {
+            "value": "{color.theme.hover.success}",
+            "type": "color",
+            "source": "$btn-success-hover-bg"
+          },
+          "outline-success": {
+            "value": "{color.success.600}",
+            "type": "color",
+            "source": "$btn-success-outline-hover-bg"
+          }
         },
         "border": {
-          "outline-success": { "value": "{color.success.base}" }
+          "success": {
+            "value": "{color.btn.hover.bg.success}",
+            "type": "color",
+            "source": "$btn-success-hover-border-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.hover.bg.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-hover-border-color"
+          }
         }
       },
       "active": {
+        "text": {
+          "success": {
+            "value": "{color.btn.active.bg.success}",
+            "type": "color",
+            "source": "$btn-success-active-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          },
+          "outline-success": {
+            "value": "{color.btn.active.bg.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-active-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          }
+        },
         "bg": {
-          "outline-success": { "value": "{color.success.base}" }
+          "success": {
+            "value": "{color.theme.active.success}",
+            "type": "color",
+            "source": "$btn-success-active-bg"
+          },
+          "outline-success": {
+            "value": "{color.btn.bg.success}",
+            "type": "color",
+            "source": "$btn-success-outline-active-bg"
+          }
         },
         "border": {
-          "outline-success": { "value": "{color.success.base}" }
-        },
-        "text": {
-          "inverse-outline-success": { "value": "{color.primary.base}", "modify": null  }
+          "success": {
+            "value": "{color.theme.active.success}",
+            "type": "color",
+            "source": "$btn-success-active-border-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.bg.success}",
+            "type": "color",
+            "source": "$btn-success-outline-active-border-color"
+          }
         }
       },
       "focus": {
         "text": {
-          "outline-success": { "value": "{color.white}" },
-          "inverse-success": { "value": "{color.btn.text.inverse-success}" }
-        },
-        "bg": {
-          "success": { "value": "{color.btn.bg.success}" },
-          "outline-success": { "value": "{color.btn.bg.success}" },
-          "inverse-success": { "value": "{color.white}" }
+          "success": {
+            "value": "{color.btn.text.success}",
+            "type": "color",
+            "source": "$btn-success-focus-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.text.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-focus-color"
+          }
         },
         "border": {
-          "success": { "value": "{color.btn.focus.bg.success}" },
-          "outline-success": { "value": "{color.btn.focus.bg.outline-success}" }
+          "success": {
+            "value": "{color.btn.border.success}",
+            "type": "color",
+            "source": "$btn-success-focus-border-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.border.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-focus-border-color"
+          }
+        },
+        "outline": {
+          "success": {
+            "value": "{color.btn.border.success}",
+            "type": "color",
+            "source": "$btn-success-focus-focus-outline-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.border.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-focus-outline-color"
+          }
+        },
+        "bg": {
+          "success": {
+            "value": "{color.btn.bg.success}",
+            "type": "color",
+            "source": "$btn-success-focus-bg"
+          },
+          "outline-success": {
+            "value": "{color.btn.bg.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-focus-bg"
+          }
         }
       },
       "disabled": {
         "text": {
-          "outline-success": { "value": "{color.success.500}" },
-          "inverse-success": { "value": "{color.success.500}" }
+          "success": {
+            "value": "{color.btn.text.success}",
+            "type": "color",
+            "source": "$btn-success-disabled-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.hover.text.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-disabled-color"
+          }
+        },
+        "bg": {
+          "success": {
+            "value": "{color.btn.bg.success}",
+            "type": "color",
+            "source": "$btn-success-disabled-bg"
+          },
+          "outline-success": {
+            "value": "{color.btn.bg.outline-success",
+            "type": "color",
+            "source": "$btn-success-outline-disabled-bg"
+          }
         },
         "border": {
-          "outline-success": { "value": "{color.light.300}" },
-          "inverse-success": { "value": "transparent" },
-          "inverse-outline-success": { "value": "{color.light.300}" }
+          "success": {
+            "value": "{color.btn.border.success}",
+            "type": "color",
+            "source": "$btn-success-disabled-border-color"
+          },
+          "outline-success": {
+            "value": "{color.btn.border.outline-success}",
+            "type": "color",
+            "source": "$btn-success-outline-disabled-border-color"
+          }
         }
       }
     }
