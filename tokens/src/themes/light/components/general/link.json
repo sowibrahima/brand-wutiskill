@@ -1,7 +1,7 @@
 {
   "color": {
     "link": {
-      "base": { "value": "{color.info.base}" },
+      "base": { "value": "{color.info.500}" },
       "hover": { "value": "{color.info.700}", "modify": null }
     }
   }
