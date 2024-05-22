@@ -67,7 +67,7 @@
         },
         "bg": {
           "secondary": {
-            "value": "{color.theme.hover.secondary}",
+            "value": "{color.secondary.400}",
             "type": "color",
             "source": "$btn-secondary-hover-bg"
           },
