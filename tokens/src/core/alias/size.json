@@ -2,7 +2,7 @@
   "size": {
     "border": {
       "radius": {
-        "base": { "value": "6.25rem" },
+        "base": { "value": ".375rem" },
         "lg": { "value": ".375rem" },
         "sm": { "value": ".375rem" }
       }
