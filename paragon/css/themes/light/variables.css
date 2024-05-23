@@ -1,7 +1,7 @@
 /**
  * IMPORTANT: This file is the result of assembling design tokens
  * Do not edit directly
- * Generated on Thu, 23 May 2024 13:50:35 GMT
+ * Generated on Thu, 23 May 2024 14:07:52 GMT
  */
 
 :root {
@@ -101,13 +101,13 @@
   --pgn-color-btn-disabled-bg-outline-info: #000000FF;
   --pgn-color-btn-disabled-bg-outline-dark: #000000FF;
   --pgn-color-btn-disabled-bg-outline-danger: #000000FF;
+  --pgn-other-btn-disabled-opacity: .3;
   --pgn-elevation-box-shadow-level-4: 0px 8px 48px 0px rgba(0,0,0,0.15), 0px 20px 40px 0px rgba(0,0,0,0.15);
   --pgn-elevation-box-shadow-level-3: 0px 8px 20px 0px rgba(0,0,0,0.15), 0px 10px 20px 0px rgba(0,0,0,0.15);
   --pgn-elevation-box-shadow-level-2: 0px 4px 10px 0px rgba(0,0,0,0.15), 0px 8px 16px 0px rgba(0,0,0,0.15);
   --pgn-elevation-box-shadow-level-1: 0px 2px 8px 0px rgba(0,0,0,0.15), 0px 2px 4px 0px rgba(0,0,0,0.15);
   --pgn-elevation-image-thumbnail-box-shadow: none;
   --pgn-elevation-form-input-base: none;
-  --pgn-other-btn-disabled-opacity: .3;
   --pgn-transition-btn: none;
   --pgn-typography-input-btn-line-height-sm: 1.4286;
   --pgn-typography-input-btn-line-height-base: 1.3333;
@@ -136,7 +136,6 @@
   --pgn-color-tooltip-bg-base: #F0F2F2FF;
   --pgn-color-tooltip-light: #F0F2F2FF;
   --pgn-color-pagination-text-base: #F0F2F2FF;
-  --pgn-color-badge-bg-info: #00BBF9FF;
   --pgn-color-link-hover: #003A5BFF;
   --pgn-color-link-base: #00688DFF;
   --pgn-color-headings-base: #1F453DFF;
@@ -181,8 +180,9 @@
   --pgn-color-btn-bg-outline-danger: #FFFFFFFF;
   --pgn-color-btn-bg-danger: #8B0B02FF;
   --pgn-color-btn-bg-outline-brand: #FFFFFFFF;
-  --pgn-color-btn-bg-brand: #A93405FF;
-  --pgn-color-theme-active-gray: #171A1DFF;
+  --pgn-color-btn-bg-brand: #D74000FF;
+  --pgn-color-badge-bg-info: #00BBF9FF;
+  --pgn-color-theme-active-gray: #212529FF;
   --pgn-color-theme-active-dark: #040A08FF;
   --pgn-color-theme-active-light: #201F1DFF;
   --pgn-color-theme-active-danger: #4A0A05FF;
