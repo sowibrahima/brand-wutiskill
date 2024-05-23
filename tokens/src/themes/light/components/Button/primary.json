@@ -20,7 +20,7 @@
       },
       "bg": {
         "primary": {
-          "value": "{color.primary.600}",
+          "value": "{color.primary.500}",
           "type": "color",
           "source": "$btn-primary-bg"
         },
@@ -55,7 +55,7 @@
             ]
           },
           "outline-primary": {
-            "value": "{color.primary.600}",
+            "value": "{color.primary.500}",
             "type": "color",
             "source": "$btn-primary-outline-hover-color",
             "modify": [
@@ -67,19 +67,19 @@
         },
         "bg": {
           "primary": {
-            "value": "{color.theme.hover.primary}",
+            "value": "{color.primary.300}",
             "type": "color",
             "source": "$btn-primary-hover-bg"
           },
           "outline-primary": {
-            "value": "{color.primary.600}",
+            "value": "{color.primary.500}",
             "type": "color",
             "source": "$btn-primary-outline-hover-bg"
           }
         },
         "border": {
           "primary": {
-            "value": "{color.btn.hover.bg.primary}",
+            "value": "{color.primary.500}",
             "type": "color",
             "source": "$btn-primary-hover-border-color"
           },
