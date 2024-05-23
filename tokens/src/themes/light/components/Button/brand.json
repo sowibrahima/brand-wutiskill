@@ -20,7 +20,7 @@
       },
       "bg": {
         "brand": {
-          "value": "{color.brand.600}",
+          "value": "{color.brand.500}",
           "type": "color",
           "source": "$btn-brand-bg"
         },
@@ -88,7 +88,7 @@
       "active": {
         "text": {
           "brand": {
-            "value": "{color.brand.500}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-brand-active-color",
             "modify": [
