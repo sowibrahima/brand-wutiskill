@@ -45,14 +45,9 @@
       "hover": {
         "text": {
           "brand": {
-            "value": "{color.brand.100}",
+            "value": "{color.black}",
             "type": "color",
-            "source": "$btn-brand-hover-color",
-            "modify": [
-              {
-                "type": "color-yiq"
-              }
-            ]
+            "source": "$btn-brand-hover-color"
           },
           "outline-brand": {
             "value": "{color.brand.500}",
@@ -67,7 +62,7 @@
         },
         "bg": {
           "brand": {
-            "value": "{color.theme.hover.brand}",
+            "value": "{color.brand.100}",
             "type": "color",
             "source": "$btn-brand-hover-bg"
           },
@@ -79,7 +74,7 @@
         },
         "border": {
           "brand": {
-            "value": "{color.btn.hover.bg.brand}",
+            "value": "{color.brand.500}",
             "type": "color",
             "source": "$btn-brand-hover-border-color"
           },
@@ -115,24 +110,24 @@
         },
         "bg": {
           "brand": {
-            "value": "{color.theme.active.brand}",
+            "value": "{color.brand.500}",
             "type": "color",
             "source": "$btn-brand-active-bg"
           },
           "outline-brand": {
-            "value": "{color.btn.bg.brand}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-brand-outline-active-bg"
           }
         },
         "border": {
           "brand": {
-            "value": "{color.theme.active.brand}",
+            "value": "{color.brand.500}",
             "type": "color",
             "source": "$btn-brand-active-border-color"
           },
           "outline-brand": {
-            "value": "{color.btn.bg.brand}",
+            "value": "{color.brand.500}",
             "type": "color",
             "source": "$btn-brand-outline-active-border-color"
           }
@@ -141,12 +136,12 @@
       "focus": {
         "text": {
           "brand": {
-            "value": "{color.btn.text.brand}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-brand-focus-color"
           },
           "outline-brand": {
-            "value": "{color.btn.text.outline-brand}",
+            "value": "{color.brand.500}",
             "type": "color",
             "source": "$btn-brand-outline-focus-color"
           }
