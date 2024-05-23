@@ -45,7 +45,7 @@
       "hover": {
         "text": {
           "primary": {
-            "value": "{color.btn.hover.bg.primary}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-primary-hover-color",
             "modify": [
@@ -55,7 +55,7 @@
             ]
           },
           "outline-primary": {
-            "value": "{color.primary.500}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-primary-outline-hover-color",
             "modify": [
@@ -93,7 +93,7 @@
       "active": {
         "text": {
           "primary": {
-            "value": "{color.btn.active.bg.primary}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-primary-active-color",
             "modify": [
@@ -103,7 +103,7 @@
             ]
           },
           "outline-primary": {
-            "value": "{color.btn.active.bg.outline-primary}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-primary-outline-active-color",
             "modify": [
@@ -127,12 +127,12 @@
         },
         "border": {
           "primary": {
-            "value": "{color.theme.active.primary}",
+            "value": "{color.primary.500}",
             "type": "color",
             "source": "$btn-primary-active-border-color"
           },
           "outline-primary": {
-            "value": "{color.btn.bg.primary}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-primary-outline-active-border-color"
           }
