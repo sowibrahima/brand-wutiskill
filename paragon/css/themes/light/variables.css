@@ -1,7 +1,7 @@
 /**
  * IMPORTANT: This file is the result of assembling design tokens
  * Do not edit directly
- * Generated on Fri, 24 May 2024 20:55:29 GMT
+ * Generated on Fri, 24 May 2024 21:19:33 GMT
  */
 
 :root {
@@ -141,6 +141,7 @@
   --pgn-color-body-bg: #FFFFFFFF;
   --pgn-color-form-input-focus-bg: #FFFFFFFF;
   --pgn-color-form-input-bg-base: #FFFFFFFF;
+  --pgn-color-btn-disabled-bg-outline-brand: #FFFFFFFF;
   --pgn-color-btn-disabled-text-outline-primary: #00262BFF;
   --pgn-color-btn-focus-text-outline-primary: #00262BFF;
   --pgn-color-btn-focus-text-primary: #FFFFFFFF;
@@ -157,8 +158,8 @@
   --pgn-color-btn-active-bg-brand: #D74000FF;
   --pgn-color-btn-active-text-outline-primary: #00262BFF;
   --pgn-color-btn-active-text-primary: #FFFFFFFF;
-  --pgn-color-btn-active-text-outline-brand: #FFFFFFFF;
-  --pgn-color-btn-active-text-brand: #454545FF;
+  --pgn-color-btn-active-text-outline-brand: #D74000FF;
+  --pgn-color-btn-active-text-brand: #FFFFFFFF;
   --pgn-color-btn-hover-border-primary: #00262BFF;
   --pgn-color-btn-hover-border-brand: #D74000FF;
   --pgn-color-btn-hover-bg-outline-warning: #C1A400FF;
@@ -180,7 +181,7 @@
   --pgn-color-btn-hover-text-outline-dark: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-danger: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-brand: #FFFFFFFF;
-  --pgn-color-btn-hover-text-brand: #FFFFFFFF;
+  --pgn-color-btn-hover-text-brand: #000000FF;
   --pgn-color-btn-bg-outline-warning: #FFFFFFFF;
   --pgn-color-btn-bg-warning: #C1A400FF;
   --pgn-color-btn-bg-outline-success: #FFFFFFFF;
@@ -281,7 +282,6 @@
   --pgn-color-btn-disabled-bg-info: #005E7FFF;
   --pgn-color-btn-disabled-bg-dark: #193731FF;
   --pgn-color-btn-disabled-bg-danger: #9A0C02FF;
-  --pgn-color-btn-disabled-bg-outline-brand: #F49974FF;
   --pgn-color-btn-disabled-bg-brand: #F49974FF;
   --pgn-color-btn-disabled-text-outline-warning: #393939FF;
   --pgn-color-btn-disabled-text-outline-success: #FFFFFFFF;
@@ -290,7 +290,6 @@
   --pgn-color-btn-disabled-text-outline-info: #FFFFFFFF;
   --pgn-color-btn-disabled-text-outline-dark: #FFFFFFFF;
   --pgn-color-btn-disabled-text-outline-danger: #FFFFFFFF;
-  --pgn-color-btn-disabled-text-outline-brand: #FFFFFFFF;
   --pgn-color-btn-focus-bg-outline-warning: #FFFFFFFF;
   --pgn-color-btn-focus-bg-warning: #C1A400FF;
   --pgn-color-btn-focus-bg-outline-success: #FFFFFFFF;
@@ -413,6 +412,7 @@
   --pgn-color-btn-disabled-text-info: #FFFFFFFF;
   --pgn-color-btn-disabled-text-dark: #FFFFFFFF;
   --pgn-color-btn-disabled-text-danger: #FFFFFFFF;
+  --pgn-color-btn-disabled-text-outline-brand: #D74000FF;
   --pgn-color-btn-disabled-text-brand: #FFFFFFFF;
   --pgn-color-btn-focus-outline-outline-warning: #C1A400FF;
   --pgn-color-btn-focus-outline-warning: #C1A400FF;
