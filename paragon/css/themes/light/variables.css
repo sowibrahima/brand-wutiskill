@@ -1,7 +1,7 @@
 /**
  * IMPORTANT: This file is the result of assembling design tokens
  * Do not edit directly
- * Generated on Fri, 24 May 2024 21:19:33 GMT
+ * Generated on Fri, 24 May 2024 22:53:45 GMT
  */
 
 :root {
@@ -100,6 +100,7 @@
   --pgn-color-btn-disabled-bg-outline-info: #000000FF;
   --pgn-color-btn-disabled-bg-outline-dark: #000000FF;
   --pgn-color-btn-disabled-bg-outline-danger: #000000FF;
+  --pgn-color-btn-focus-outline-tertiary: #00000000;
   --pgn-other-btn-disabled-opacity: .3;
   --pgn-elevation-box-shadow-level-4: 0px 8px 48px 0px rgba(0,0,0,0.15), 0px 20px 40px 0px rgba(0,0,0,0.15);
   --pgn-elevation-box-shadow-level-3: 0px 8px 20px 0px rgba(0,0,0,0.15), 0px 10px 20px 0px rgba(0,0,0,0.15);
@@ -143,19 +144,24 @@
   --pgn-color-form-input-bg-base: #FFFFFFFF;
   --pgn-color-btn-disabled-bg-outline-brand: #FFFFFFFF;
   --pgn-color-btn-disabled-text-outline-primary: #00262BFF;
+  --pgn-color-btn-focus-bg-tertiary: #FFFFFFFF;
+  --pgn-color-btn-focus-border-tertiary: #00262BFF;
+  --pgn-color-btn-focus-text-tertiary: #00262BFF;
   --pgn-color-btn-focus-text-outline-primary: #00262BFF;
   --pgn-color-btn-focus-text-primary: #FFFFFFFF;
   --pgn-color-btn-focus-text-outline-brand: #D74000FF;
   --pgn-color-btn-focus-text-brand: #FFFFFFFF;
+  --pgn-color-btn-active-border-tertiary: #00262BFF;
   --pgn-color-btn-active-border-outline-primary: #00262BFF;
   --pgn-color-btn-active-border-primary: #00262BFF;
   --pgn-color-btn-active-border-outline-brand: #D74000FF;
   --pgn-color-btn-active-border-brand: #D74000FF;
-  --pgn-color-btn-active-bg-inverse-tertiary: #2D494EFF;
+  --pgn-color-btn-active-bg-tertiary: #FFFFFFFF;
   --pgn-color-btn-active-bg-outline-primary: #FFFFFFFF;
   --pgn-color-btn-active-bg-primary: #00262BFF;
   --pgn-color-btn-active-bg-outline-brand: #FFFFFFFF;
   --pgn-color-btn-active-bg-brand: #D74000FF;
+  --pgn-color-btn-active-text-tertiary: #00262BFF;
   --pgn-color-btn-active-text-outline-primary: #00262BFF;
   --pgn-color-btn-active-text-primary: #FFFFFFFF;
   --pgn-color-btn-active-text-outline-brand: #D74000FF;
@@ -163,7 +169,7 @@
   --pgn-color-btn-hover-border-primary: #00262BFF;
   --pgn-color-btn-hover-border-brand: #D74000FF;
   --pgn-color-btn-hover-bg-outline-warning: #C1A400FF;
-  --pgn-color-btn-hover-bg-inverse-tertiary: #2D494EFF;
+  --pgn-color-btn-hover-bg-tertiary: #00262BFF;
   --pgn-color-btn-hover-bg-outline-success: #0C7145FF;
   --pgn-color-btn-hover-bg-outline-primary: #00262BFF;
   --pgn-color-btn-hover-bg-primary: #2D494EFF;
@@ -173,6 +179,7 @@
   --pgn-color-btn-hover-bg-outline-danger: #9A0C02FF;
   --pgn-color-btn-hover-bg-outline-brand: #D74000FF;
   --pgn-color-btn-hover-text-outline-warning: #393939FF;
+  --pgn-color-btn-hover-text-tertiary: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-success: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-primary: #FFFFFFFF;
   --pgn-color-btn-hover-text-primary: #FFFFFFFF;
@@ -307,7 +314,6 @@
   --pgn-color-btn-focus-bg-danger: #9A0C02FF;
   --pgn-color-btn-focus-bg-outline-brand: #FFFFFFFF;
   --pgn-color-btn-focus-bg-brand: #D74000FF;
-  --pgn-color-btn-focus-text-tertiary: #454545FF;
   --pgn-color-btn-active-border-outline-warning: #C1A400FF;
   --pgn-color-btn-active-border-warning: #7A6800FF;
   --pgn-color-btn-active-border-outline-success: #0C7145FF;
