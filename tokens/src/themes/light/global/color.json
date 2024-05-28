@@ -211,19 +211,22 @@
         "value": "#BFC9CA",
         "type": "color",
         "source": "$primary-200",
-        "description": "Primary color of level 200."
+        "description": "Primary color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#2D494E",
         "type": "color",
         "source": "$primary-300",
-        "description": "Primary color of level 300."
+        "description": "Primary color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#0E3639",
         "type": "color",
         "source": "$primary-400",
-        "description": "Primary color of level 400."
+        "description": "Primary color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#00262B",
@@ -235,25 +238,29 @@
         "value": "#002326",
         "type": "color",
         "source": "$primary-600",
-        "description": "Primary color of level 600."
+        "description": "Primary color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#002121",
         "type": "color",
         "source": "$primary-700",
-        "description": "Primary color of level 700."
+        "description": "Primary color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#001D20",
         "type": "color",
         "source": "$primary-800",
-        "description": "Primary color of level 800."
+        "description": "Primary color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#001B1E",
         "type": "color",
         "source": "$primary-900",
-        "description": "Primary color of level 900."
+        "description": "Primary color of level 900.",
+        "modify": null
       }
     },
     "brand": {
@@ -267,25 +274,29 @@
         "value": "{color.brand.base}",
         "type": "color",
         "source": "$brand-100",
-        "description": "Brand color of level 100."
+        "description": "Brand color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#EE855A",
         "type": "color",
         "source": "$brand-200",
-        "description": "Brand color of level 200."
+        "description": "Brand color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#E76F3F",
         "type": "color",
         "source": "$brand-300",
-        "description": "Brand color of level 300."
+        "description": "Brand color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#DF5924",
         "type": "color",
         "source": "$brand-400",
-        "description": "Brand color of level 400."
+        "description": "Brand color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#D74000",
@@ -297,25 +308,29 @@
         "value": "#BC3A05",
         "type": "color",
         "source": "$brand-600",
-        "description": "Brand color of level 600."
+        "description": "Brand color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#A33508",
         "type": "color",
         "source": "$brand-700",
-        "description": "Brand color of level 700."
+        "description": "Brand color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#8B2F0B",
         "type": "color",
         "source": "$brand-800",
-        "description": "Brand color of level 800."
+        "description": "Brand color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#73290C",
         "type": "color",
         "source": "$brand-900",
-        "description": "Brand color of level 900."
+        "description": "Brand color of level 900.",
+        "modify": null
       }
     },
     "success": {
@@ -329,25 +344,29 @@
         "value": "{color.success.base}",
         "type": "color",
         "source": "$success-100",
-        "description": "Success color of level 100."
+        "description": "Success color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#BBE6D7",
         "type": "color",
         "source": "$success-200",
-        "description": "Success color of level 200."
+        "description": "Success color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#30A171",
         "type": "color",
         "source": "$success-300",
-        "description": "Success color of level 300."
+        "description": "Success color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#4A9E7A",
         "type": "color",
         "source": "$success-400",
-        "description": "Success color of level 400."
+        "description": "Success color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#0D7D4D",
@@ -359,25 +378,29 @@
         "value": "#0C7145",
         "type": "color",
         "source": "$success-600",
-        "description": "Success color of level 600."
+        "description": "Success color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#175B3C",
         "type": "color",
         "source": "$success-700",
-        "description": "Success color of level 700."
+        "description": "Success color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#0A5E3A",
         "type": "color",
         "source": "$success-800",
-        "description": "Success color of level 800."
+        "description": "Success color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#0F4D0F",
         "type": "color",
         "source": "$success-900",
-        "description": "Success color of level 900."
+        "description": "Success color of level 900.",
+        "modify": null
       }
     },
     "info": {
@@ -391,25 +414,29 @@
         "value": "{color.info.base}",
         "type": "color",
         "source": "$info-100",
-        "description": "Info color of level 100."
+        "description": "Info color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#9CD2E6",
         "type": "color",
         "source": "$info-200",
-        "description": "Info color of level 200."
+        "description": "Info color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#1C8DBE",
         "type": "color",
         "source": "$info-300",
-        "description": "Info color of level 300."
+        "description": "Info color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#408EAA",
         "type": "color",
         "source": "$info-400",
-        "description": "Info color of level 400."
+        "description": "Info color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#00688D",
@@ -421,25 +448,29 @@
         "value": "#005E7F",
         "type": "color",
         "source": "$info-600",
-        "description": "Info color of level 600."
+        "description": "Info color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#004972",
         "type": "color",
         "source": "$info-700",
-        "description": "Info color of level 700."
+        "description": "Info color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#004E6A",
         "type": "color",
         "source": "$info-800",
-        "description": "Info color of level 800."
+        "description": "Info color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#002F4A",
         "type": "color",
         "source": "$info-900",
-        "description": "Info color of level 900."
+        "description": "Info color of level 900.",
+        "modify": null
       }
     },
     "warning": {
@@ -453,25 +484,29 @@
         "value": "{color.warning.base}",
         "type": "color",
         "source": "$warning-100",
-        "description": "Warning color of level 100."
+        "description": "Warning color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#FFEA75",
         "type": "color",
         "source": "$warning-200",
-        "description": "Warning color of level 200."
+        "description": "Warning color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#F0CC00",
         "type": "color",
         "source": "$warning-300",
-        "description": "Warning color of level 300."
+        "description": "Warning color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#E0C840",
         "type": "color",
         "source": "$warning-400",
-        "description": "Warning color of level 400."
+        "description": "Warning color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#D6B600",
@@ -483,25 +518,29 @@
         "value": "#C1A400",
         "type": "color",
         "source": "$warning-600",
-        "description": "Warning color of level 600."
+        "description": "Warning color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#998200",
         "type": "color",
         "source": "$warning-700",
-        "description": "Warning color of level 700."
+        "description": "Warning color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#A18900",
         "type": "color",
         "source": "$warning-800",
-        "description": "Warning color of level 800."
+        "description": "Warning color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#7A6800",
         "type": "color",
         "source": "$warning-900",
-        "description": "Warning color of level 900."
+        "description": "Warning color of level 900.",
+        "modify": null
       }
     },
     "danger": {
@@ -515,25 +554,29 @@
         "value": "{color.danger.base}",
         "type": "color",
         "source": "$danger-100",
-        "description": "Danger color of level 100."
+        "description": "Danger color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#F3AEA9",
         "type": "color",
         "source": "$danger-200",
-        "description": "Danger color of level 200."
+        "description": "Danger color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#CA3A2F",
         "type": "color",
         "source": "$danger-300",
-        "description": "Danger color of level 300."
+        "description": "Danger color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#C04A41",
         "type": "color",
         "source": "$danger-400",
-        "description": "Danger color of level 400."
+        "description": "Danger color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#AB0D02",
@@ -545,25 +588,29 @@
         "value": "#9A0C02",
         "type": "color",
         "source": "$danger-600",
-        "description": "Danger color of level 600."
+        "description": "Danger color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#951C13",
         "type": "color",
         "source": "$danger-700",
-        "description": "Danger color of level 700."
+        "description": "Danger color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#800A02",
         "type": "color",
         "source": "$danger-800",
-        "description": "Danger color of level 800."
+        "description": "Danger color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#690E07",
         "type": "color",
         "source": "$danger-900",
-        "description": "Danger color of level 900."
+        "description": "Danger color of level 900.",
+        "modify": null
       }
     },
     "light": {
@@ -577,25 +624,29 @@
         "value": "{color.light.base}",
         "type": "color",
         "source": "$light-100",
-        "description": "Light color of level 100."
+        "description": "Light color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#F3F1ED",
         "type": "color",
         "source": "$light-200",
-        "description": "Light color of level 200."
+        "description": "Light color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#EDEBE4",
         "type": "color",
         "source": "$light-300",
-        "description": "Light color of level 300."
+        "description": "Light color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#E7E4DB",
         "type": "color",
         "source": "$light-400",
-        "description": "Light color of level 400."
+        "description": "Light color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#E1DDD2",
@@ -607,25 +658,29 @@
         "value": "#B4B1A8",
         "type": "color",
         "source": "$light-600",
-        "description": "Light color of level 600."
+        "description": "Light color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#87857E",
         "type": "color",
         "source": "$light-700",
-        "description": "Light color of level 700."
+        "description": "Light color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#5A5854",
         "type": "color",
         "source": "$light-800",
-        "description": "Light color of level 800."
+        "description": "Light color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#2D2C2A",
         "type": "color",
         "source": "$light-900",
-        "description": "Light color of level 900."
+        "description": "Light color of level 900.",
+        "modify": null
       }
     },
     "dark": {
@@ -639,25 +694,29 @@
         "value": "{color.dark.base}",
         "type": "color",
         "source": "$dark-100",
-        "description": "Dark color of level 100."
+        "description": "Dark color of level 100.",
+        "modify": null
       },
       "200": {
         "value": "#BFC9CA",
         "type": "color",
         "source": "$dark-200",
-        "description": "Dark color of level 200."
+        "description": "Dark color of level 200.",
+        "modify": null
       },
       "300": {
         "value": "#798F8B",
         "type": "color",
         "source": "$dark-300",
-        "description": "Dark color of level 300."
+        "description": "Dark color of level 300.",
+        "modify": null
       },
       "400": {
         "value": "#4C6A64",
         "type": "color",
         "source": "$dark-400",
-        "description": "Dark color of level 400."
+        "description": "Dark color of level 400.",
+        "modify": null
       },
       "500": {
         "value": "#1F453D",
@@ -669,25 +728,29 @@
         "value": "#193731",
         "type": "color",
         "source": "$dark-600",
-        "description": "Dark color of level 600."
+        "description": "Dark color of level 600.",
+        "modify": null
       },
       "700": {
         "value": "#132925",
         "type": "color",
         "source": "$dark-700",
-        "description": "Info color of level 700."
+        "description": "Info color of level 700.",
+        "modify": null
       },
       "800": {
         "value": "#0C1C18",
         "type": "color",
         "source": "$dark-800",
-        "description": "Dark color of level 800."
+        "description": "Dark color of level 800.",
+        "modify": null
       },
       "900": {
         "value": "#060E0C",
         "type": "color",
         "source": "$dark-900",
-        "description": "Dark color of level 900."
+        "description": "Dark color of level 900.",
+        "modify": null
       }
     }
   }

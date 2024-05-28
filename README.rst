@@ -145,7 +145,7 @@ Building design tokens
 
    .. code-block:: bash
 
-     npm run build-design-tokens
+     npm run build-tokens
 
 
 --------------------------------

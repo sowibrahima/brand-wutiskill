@@ -47,17 +47,14 @@
           "brand": {
             "value": "{color.black}",
             "type": "color",
-            "source": "$btn-brand-hover-color"
+            "source": "$btn-brand-hover-color",
+            "modify": null
           },
           "outline-brand": {
-            "value": "{color.brand.500}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-brand-outline-hover-color",
-            "modify": [
-              {
-                "type": "color-yiq"
-              }
-            ]
+            "modify": null
           }
         },
         "bg": {
@@ -91,21 +88,13 @@
             "value": "{color.white}",
             "type": "color",
             "source": "$btn-brand-active-color",
-            "modify": [
-              {
-                "type": "color-yiq"
-              }
-            ]
+            "modify": null
           },
           "outline-brand": {
             "value": "{color.brand.500}",
             "type": "color",
             "source": "$btn-brand-outline-active-color",
-            "modify": [
-              {
-                "type": "color-yiq"
-              }
-            ]
+            "modify": null
           }
         },
         "bg": {
@@ -138,7 +127,8 @@
           "brand": {
             "value": "{color.white}",
             "type": "color",
-            "source": "$btn-brand-focus-color"
+            "source": "$btn-brand-focus-color",
+            "modify": null
           },
           "outline-brand": {
             "value": "{color.brand.500}",
@@ -191,7 +181,7 @@
             "source": "$btn-brand-disabled-color"
           },
           "outline-brand": {
-            "value": "{color.btn.hover.text.outline-brand}",
+            "value": "{color.btn.text.outline-brand}",
             "type": "color",
             "source": "$btn-brand-outline-disabled-color"
           }
@@ -203,7 +193,7 @@
             "source": "$btn-brand-disabled-bg"
           },
           "outline-brand": {
-            "value": "{color.brand.100}",
+            "value": "{color.white}",
             "type": "color",
             "source": "$btn-brand-outline-disabled-bg"
           }
