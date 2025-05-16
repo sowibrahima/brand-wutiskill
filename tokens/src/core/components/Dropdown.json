@@ -2,7 +2,7 @@
   "size": {
     "dropdown": {
       "border": {
-        "width": { "value": "0" }
+        "width": { "$value": "0" }
       }
     }
   },
@@ -10,8 +10,8 @@
     "dropdown": {
       "padding": {
         "y": {
-          "base": { "value": "{spacing.spacer.2}" },
-          "item": { "value": "{spacing.spacer.2,5}" }
+          "base": { "$value": "{spacing.spacer.2}" },
+          "item": { "$value": "{spacing.spacer.2,5}" }
         }
       }
     }

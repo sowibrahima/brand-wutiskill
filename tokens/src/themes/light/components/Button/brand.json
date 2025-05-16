@@ -3,8 +3,8 @@
     "btn": {
       "text": {
         "brand": {
-          "value": "{color.btn.bg.brand}",
-          "type": "color",
+          "$value": "{color.btn.bg.brand}",
+          "$type": "color",
           "source": "$btn-brand-color",
           "modify": [
             {
@@ -13,71 +13,71 @@
           ]
         },
         "outline-brand": {
-          "value": "{color.btn.bg.brand}",
-          "type": "color",
+          "$value": "{color.btn.bg.brand}",
+          "$type": "color",
           "source": "$btn-brand-outline-color"
         }
       },
       "bg": {
         "brand": {
-          "value": "{color.brand.500}",
-          "type": "color",
+          "$value": "{color.brand.500}",
+          "$type": "color",
           "source": "$btn-brand-bg"
         },
         "outline-brand": {
-          "value": "{color.white}",
-          "type": "color",
+          "$value": "{color.white}",
+          "$type": "color",
           "source": "$btn-brand-outline-bg"
         }
       },
       "border": {
         "brand": {
-          "value": "{color.btn.bg.brand}",
-          "type": "color",
+          "$value": "{color.btn.bg.brand}",
+          "$type": "color",
           "source": "$btn-brand-border-color"
         },
         "outline-brand": {
-          "value": "{color.btn.bg.brand}",
-          "type": "color",
+          "$value": "{color.btn.bg.brand}",
+          "$type": "color",
           "source": "$btn-brand-outline-border-color"
         }
       },
       "hover": {
         "text": {
           "brand": {
-            "value": "{color.black}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-hover-color",
             "modify": null
           },
           "outline-brand": {
-            "value": "{color.white}",
-            "type": "color",
+            "$value": "{color.white}",
+            "$type": "color",
             "source": "$btn-brand-outline-hover-color",
             "modify": null
           }
         },
         "bg": {
           "brand": {
-            "value": "{color.brand.100}",
-            "type": "color",
+            "$value": "{color.white}",
+            "$type": "color",
             "source": "$btn-brand-hover-bg"
           },
           "outline-brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-outline-hover-bg"
           }
         },
         "border": {
           "brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-hover-border-color"
           },
           "outline-brand": {
-            "value": "{color.btn.hover.bg.outline-brand}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.outline-brand}",
+            "$type": "color",
             "source": "$btn-brand-outline-hover-border-color"
           }
         }
@@ -85,39 +85,39 @@
       "active": {
         "text": {
           "brand": {
-            "value": "{color.white}",
-            "type": "color",
+            "$value": "{color.white}",
+            "$type": "color",
             "source": "$btn-brand-active-color",
             "modify": null
           },
           "outline-brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-outline-active-color",
             "modify": null
           }
         },
         "bg": {
           "brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-active-bg"
           },
           "outline-brand": {
-            "value": "{color.white}",
-            "type": "color",
+            "$value": "{color.white}",
+            "$type": "color",
             "source": "$btn-brand-outline-active-bg"
           }
         },
         "border": {
           "brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-active-border-color"
           },
           "outline-brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-outline-active-border-color"
           }
         }
@@ -125,50 +125,50 @@
       "focus": {
         "text": {
           "brand": {
-            "value": "{color.white}",
-            "type": "color",
+            "$value": "{color.white}",
+            "$type": "color",
             "source": "$btn-brand-focus-color",
             "modify": null
           },
           "outline-brand": {
-            "value": "{color.brand.500}",
-            "type": "color",
+            "$value": "{color.brand.500}",
+            "$type": "color",
             "source": "$btn-brand-outline-focus-color"
           }
         },
         "border": {
           "brand": {
-            "value": "{color.btn.border.brand}",
-            "type": "color",
+            "$value": "{color.btn.border.brand}",
+            "$type": "color",
             "source": "$btn-brand-focus-border-color"
           },
           "outline-brand": {
-            "value": "{color.btn.border.outline-brand}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-brand}",
+            "$type": "color",
             "source": "$btn-brand-outline-focus-border-color"
           }
         },
         "outline": {
           "brand": {
-            "value": "{color.btn.border.brand}",
-            "type": "color",
+            "$value": "{color.btn.border.brand}",
+            "$type": "color",
             "source": "$btn-brand-focus-focus-outline-color"
           },
           "outline-brand": {
-            "value": "{color.btn.border.outline-brand}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-brand}",
+            "$type": "color",
             "source": "$btn-brand-outline-focus-outline-color"
           }
         },
         "bg": {
           "brand": {
-            "value": "{color.btn.bg.brand}",
-            "type": "color",
+            "$value": "{color.btn.bg.brand}",
+            "$type": "color",
             "source": "$btn-brand-focus-bg"
           },
           "outline-brand": {
-            "value": "{color.btn.bg.outline-brand}",
-            "type": "color",
+            "$value": "{color.btn.bg.outline-brand}",
+            "$type": "color",
             "source": "$btn-brand-outline-focus-bg"
           }
         }
@@ -176,37 +176,37 @@
       "disabled": {
         "text": {
           "brand": {
-            "value": "{color.btn.text.brand}",
-            "type": "color",
+            "$value": "{color.btn.text.brand}",
+            "$type": "color",
             "source": "$btn-brand-disabled-color"
           },
           "outline-brand": {
-            "value": "{color.btn.text.outline-brand}",
-            "type": "color",
+            "$value": "{color.btn.text.outline-brand}",
+            "$type": "color",
             "source": "$btn-brand-outline-disabled-color"
           }
         },
         "bg": {
           "brand": {
-            "value": "{color.brand.100}",
-            "type": "color",
+            "$value": "{color.brand.100}",
+            "$type": "color",
             "source": "$btn-brand-disabled-bg"
           },
           "outline-brand": {
-            "value": "{color.white}",
-            "type": "color",
+            "$value": "{color.white}",
+            "$type": "color",
             "source": "$btn-brand-outline-disabled-bg"
           }
         },
         "border": {
           "brand": {
-            "value": "{color.btn.border.brand}",
-            "type": "color",
+            "$value": "{color.btn.border.brand}",
+            "$type": "color",
             "source": "$btn-brand-disabled-border-color"
           },
           "outline-brand": {
-            "value": "{color.btn.border.outline-brand}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-brand}",
+            "$type": "color",
             "source": "$btn-brand-outline-disabled-border-color"
           }
         }

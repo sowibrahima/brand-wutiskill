@@ -3,8 +3,8 @@
     "btn": {
       "text": {
         "light": {
-          "value": "{color.btn.bg.light}",
-          "type": "color",
+          "$value": "{color.btn.bg.light}",
+          "$type": "color",
           "source": "$btn-light-color",
           "modify": [
             {
@@ -13,40 +13,40 @@
           ]
         },
         "outline-light": {
-          "value": "{color.btn.bg.light}",
-          "type": "color",
+          "$value": "{color.btn.bg.light}",
+          "$type": "color",
           "source": "$btn-light-outline-color"
         }
       },
       "bg": {
         "light": {
-          "value": "{color.light.600}",
-          "type": "color",
+          "$value": "{color.light.600}",
+          "$type": "color",
           "source": "$btn-light-bg"
         },
         "outline-light": {
-          "value": "{color.white}",
-          "type": "color",
+          "$value": "{color.white}",
+          "$type": "color",
           "source": "$btn-light-outline-bg"
         }
       },
       "border": {
         "light": {
-          "value": "{color.btn.bg.light}",
-          "type": "color",
+          "$value": "{color.btn.bg.light}",
+          "$type": "color",
           "source": "$btn-light-border-color"
         },
         "outline-light": {
-          "value": "{color.btn.bg.light}",
-          "type": "color",
+          "$value": "{color.btn.bg.light}",
+          "$type": "color",
           "source": "$btn-light-outline-border-color"
         }
       },
       "hover": {
         "text": {
           "light": {
-            "value": "{color.btn.hover.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.light}",
+            "$type": "color",
             "source": "$btn-light-hover-color",
             "modify": [
               {
@@ -55,8 +55,8 @@
             ]
           },
           "outline-light": {
-            "value": "{color.light.600}",
-            "type": "color",
+            "$value": "{color.light.600}",
+            "$type": "color",
             "source": "$btn-light-outline-hover-color",
             "modify": [
               {
@@ -67,25 +67,25 @@
         },
         "bg": {
           "light": {
-            "value": "{color.theme.hover.light}",
-            "type": "color",
+            "$value": "{color.theme.hover.light}",
+            "$type": "color",
             "source": "$btn-light-hover-bg"
           },
           "outline-light": {
-            "value": "{color.light.600}",
-            "type": "color",
+            "$value": "{color.light.600}",
+            "$type": "color",
             "source": "$btn-light-outline-hover-bg"
           }
         },
         "border": {
           "light": {
-            "value": "{color.btn.hover.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.light}",
+            "$type": "color",
             "source": "$btn-light-hover-border-color"
           },
           "outline-light": {
-            "value": "{color.btn.hover.bg.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-hover-border-color"
           }
         }
@@ -93,8 +93,8 @@
       "active": {
         "text": {
           "light": {
-            "value": "{color.btn.active.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.active.bg.light}",
+            "$type": "color",
             "source": "$btn-light-active-color",
             "modify": [
               {
@@ -103,8 +103,8 @@
             ]
           },
           "outline-light": {
-            "value": "{color.btn.active.bg.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.active.bg.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-active-color",
             "modify": [
               {
@@ -115,25 +115,25 @@
         },
         "bg": {
           "light": {
-            "value": "{color.theme.active.light}",
-            "type": "color",
+            "$value": "{color.theme.active.light}",
+            "$type": "color",
             "source": "$btn-light-active-bg"
           },
           "outline-light": {
-            "value": "{color.btn.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.bg.light}",
+            "$type": "color",
             "source": "$btn-light-outline-active-bg"
           }
         },
         "border": {
           "light": {
-            "value": "{color.theme.active.light}",
-            "type": "color",
+            "$value": "{color.theme.active.light}",
+            "$type": "color",
             "source": "$btn-light-active-border-color"
           },
           "outline-light": {
-            "value": "{color.btn.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.bg.light}",
+            "$type": "color",
             "source": "$btn-light-outline-active-border-color"
           }
         }
@@ -141,49 +141,49 @@
       "focus": {
         "text": {
           "light": {
-            "value": "{color.btn.text.light}",
-            "type": "color",
+            "$value": "{color.btn.text.light}",
+            "$type": "color",
             "source": "$btn-light-focus-color"
           },
           "outline-light": {
-            "value": "{color.btn.text.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.text.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-focus-color"
           }
         },
         "border": {
           "light": {
-            "value": "{color.btn.border.light}",
-            "type": "color",
+            "$value": "{color.btn.border.light}",
+            "$type": "color",
             "source": "$btn-light-focus-border-color"
           },
           "outline-light": {
-            "value": "{color.btn.border.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-focus-border-color"
           }
         },
         "outline": {
           "light": {
-            "value": "{color.btn.border.light}",
-            "type": "color",
+            "$value": "{color.btn.border.light}",
+            "$type": "color",
             "source": "$btn-light-focus-focus-outline-color"
           },
           "outline-light": {
-            "value": "{color.btn.border.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-focus-outline-color"
           }
         },
         "bg": {
           "light": {
-            "value": "{color.btn.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.bg.light}",
+            "$type": "color",
             "source": "$btn-light-focus-bg"
           },
           "outline-light": {
-            "value": "{color.btn.bg.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.bg.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-focus-bg"
           }
         }
@@ -191,37 +191,37 @@
       "disabled": {
         "text": {
           "light": {
-            "value": "{color.btn.text.light}",
-            "type": "color",
+            "$value": "{color.btn.text.light}",
+            "$type": "color",
             "source": "$btn-light-disabled-color"
           },
           "outline-light": {
-            "value": "{color.btn.hover.text.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.hover.text.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-disabled-color"
           }
         },
         "bg": {
           "light": {
-            "value": "{color.btn.bg.light}",
-            "type": "color",
+            "$value": "{color.btn.bg.light}",
+            "$type": "color",
             "source": "$btn-light-disabled-bg"
           },
           "outline-light": {
-            "value": "{color.btn.bg.outline-light",
-            "type": "color",
+            "$value": "{color.btn.bg.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-disabled-bg"
           }
         },
         "border": {
           "light": {
-            "value": "{color.btn.border.light}",
-            "type": "color",
+            "$value": "{color.btn.border.light}",
+            "$type": "color",
             "source": "$btn-light-disabled-border-color"
           },
           "outline-light": {
-            "value": "{color.btn.border.outline-light}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-light}",
+            "$type": "color",
             "source": "$btn-light-outline-disabled-border-color"
           }
         }

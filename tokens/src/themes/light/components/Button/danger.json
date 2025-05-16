@@ -3,8 +3,8 @@
     "btn": {
       "text": {
         "danger": {
-          "value": "{color.btn.bg.danger}",
-          "type": "color",
+          "$value": "{color.btn.bg.danger}",
+          "$type": "color",
           "source": "$btn-danger-color",
           "modify": [
             {
@@ -13,40 +13,40 @@
           ]
         },
         "outline-danger": {
-          "value": "{color.btn.bg.danger}",
-          "type": "color",
+          "$value": "{color.btn.bg.danger}",
+          "$type": "color",
           "source": "$btn-danger-outline-color"
         }
       },
       "bg": {
         "danger": {
-          "value": "{color.danger.600}",
-          "type": "color",
+          "$value": "{color.danger.600}",
+          "$type": "color",
           "source": "$btn-danger-bg"
         },
         "outline-danger": {
-          "value": "{color.white}",
-          "type": "color",
+          "$value": "{color.white}",
+          "$type": "color",
           "source": "$btn-danger-outline-bg"
         }
       },
       "border": {
         "danger": {
-          "value": "{color.btn.bg.danger}",
-          "type": "color",
+          "$value": "{color.btn.bg.danger}",
+          "$type": "color",
           "source": "$btn-danger-border-color"
         },
         "outline-danger": {
-          "value": "{color.btn.bg.danger}",
-          "type": "color",
+          "$value": "{color.btn.bg.danger}",
+          "$type": "color",
           "source": "$btn-danger-outline-border-color"
         }
       },
       "hover": {
         "text": {
           "danger": {
-            "value": "{color.btn.hover.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-hover-color",
             "modify": [
               {
@@ -55,8 +55,8 @@
             ]
           },
           "outline-danger": {
-            "value": "{color.danger.600}",
-            "type": "color",
+            "$value": "{color.danger.600}",
+            "$type": "color",
             "source": "$btn-danger-outline-hover-color",
             "modify": [
               {
@@ -67,25 +67,25 @@
         },
         "bg": {
           "danger": {
-            "value": "{color.theme.hover.danger}",
-            "type": "color",
+            "$value": "{color.theme.hover.danger}",
+            "$type": "color",
             "source": "$btn-danger-hover-bg"
           },
           "outline-danger": {
-            "value": "{color.danger.600}",
-            "type": "color",
+            "$value": "{color.danger.600}",
+            "$type": "color",
             "source": "$btn-danger-outline-hover-bg"
           }
         },
         "border": {
           "danger": {
-            "value": "{color.btn.hover.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-hover-border-color"
           },
           "outline-danger": {
-            "value": "{color.btn.hover.bg.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.hover.bg.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-hover-border-color"
           }
         }
@@ -93,8 +93,8 @@
       "active": {
         "text": {
           "danger": {
-            "value": "{color.btn.active.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.active.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-active-color",
             "modify": [
               {
@@ -103,8 +103,8 @@
             ]
           },
           "outline-danger": {
-            "value": "{color.btn.active.bg.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.active.bg.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-active-color",
             "modify": [
               {
@@ -115,25 +115,25 @@
         },
         "bg": {
           "danger": {
-            "value": "{color.theme.active.danger}",
-            "type": "color",
+            "$value": "{color.theme.active.danger}",
+            "$type": "color",
             "source": "$btn-danger-active-bg"
           },
           "outline-danger": {
-            "value": "{color.btn.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-active-bg"
           }
         },
         "border": {
           "danger": {
-            "value": "{color.theme.active.danger}",
-            "type": "color",
+            "$value": "{color.theme.active.danger}",
+            "$type": "color",
             "source": "$btn-danger-active-border-color"
           },
           "outline-danger": {
-            "value": "{color.btn.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-active-border-color"
           }
         }
@@ -141,49 +141,49 @@
       "focus": {
         "text": {
           "danger": {
-            "value": "{color.btn.text.danger}",
-            "type": "color",
+            "$value": "{color.btn.text.danger}",
+            "$type": "color",
             "source": "$btn-danger-focus-color"
           },
           "outline-danger": {
-            "value": "{color.btn.text.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.text.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-focus-color"
           }
         },
         "border": {
           "danger": {
-            "value": "{color.btn.border.danger}",
-            "type": "color",
+            "$value": "{color.btn.border.danger}",
+            "$type": "color",
             "source": "$btn-danger-focus-border-color"
           },
           "outline-danger": {
-            "value": "{color.btn.border.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-focus-border-color"
           }
         },
         "outline": {
           "danger": {
-            "value": "{color.btn.border.danger}",
-            "type": "color",
+            "$value": "{color.btn.border.danger}",
+            "$type": "color",
             "source": "$btn-danger-focus-focus-outline-color"
           },
           "outline-danger": {
-            "value": "{color.btn.border.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-focus-outline-color"
           }
         },
         "bg": {
           "danger": {
-            "value": "{color.btn.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-focus-bg"
           },
           "outline-danger": {
-            "value": "{color.btn.bg.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.bg.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-focus-bg"
           }
         }
@@ -191,37 +191,37 @@
       "disabled": {
         "text": {
           "danger": {
-            "value": "{color.btn.text.danger}",
-            "type": "color",
+            "$value": "{color.btn.text.danger}",
+            "$type": "color",
             "source": "$btn-danger-disabled-color"
           },
           "outline-danger": {
-            "value": "{color.btn.hover.text.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.hover.text.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-disabled-color"
           }
         },
         "bg": {
           "danger": {
-            "value": "{color.btn.bg.danger}",
-            "type": "color",
+            "$value": "{color.btn.bg.danger}",
+            "$type": "color",
             "source": "$btn-danger-disabled-bg"
           },
           "outline-danger": {
-            "value": "{color.btn.bg.outline-danger",
-            "type": "color",
+            "$value": "{color.btn.bg.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-disabled-bg"
           }
         },
         "border": {
           "danger": {
-            "value": "{color.btn.border.danger}",
-            "type": "color",
+            "$value": "{color.btn.border.danger}",
+            "$type": "color",
             "source": "$btn-danger-disabled-border-color"
           },
           "outline-danger": {
-            "value": "{color.btn.border.outline-danger}",
-            "type": "color",
+            "$value": "{color.btn.border.outline-danger}",
+            "$type": "color",
             "source": "$btn-danger-outline-disabled-border-color"
           }
         }

@@ -2,8 +2,8 @@
   "spacing": {
     "card": {
       "spacer": {
-        "x": { "value": "{spacing.spacer.4}" },
-        "y": { "value": "{spacing.spacer.3}" }
+        "x": { "$value": "{spacing.spacer.4}" },
+        "y": { "$value": "{spacing.spacer.3}" }
       }
     }
   }

@@ -19,9 +19,11 @@
     "build-tokens": "paragon build-tokens --source ./tokens/src --build-dir ./paragon/css --source-tokens-only",
     "build-scss": "paragon build-scss --corePath ./paragon/core.scss --themesPath ./paragon/css/themes --defaultThemeVariants light",
     "build": "make build",
+    "build:watch": "nodemon --ignore dist -x \"make build\"",
     "paragon:help": "paragon help"
   },
   "devDependencies": {
-    "@openedx/paragon": "22.0.0-alpha.25"
+    "@openedx/paragon": "^23",
+    "nodemon": "^3.1.4"
   }
 }
