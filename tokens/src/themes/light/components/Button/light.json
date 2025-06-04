@@ -20,7 +20,7 @@
       },
       "bg": {
         "light": {
-          "$value": "{color.light.600}",
+          "$value": "{color.light.500}",
           "$type": "color",
           "source": "$btn-light-bg"
         },
@@ -55,7 +55,7 @@
             ]
           },
           "outline-light": {
-            "$value": "{color.light.600}",
+            "$value": "{color.light.500}",
             "$type": "color",
             "source": "$btn-light-outline-hover-color",
             "modify": [
@@ -72,7 +72,7 @@
             "source": "$btn-light-hover-bg"
           },
           "outline-light": {
-            "$value": "{color.light.600}",
+            "$value": "{color.light.500}",
             "$type": "color",
             "source": "$btn-light-outline-hover-bg"
           }
