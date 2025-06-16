@@ -1,4 +1,17 @@
 {
+  "color": {
+    "modal": {
+      "footer": {
+        "overrides": {
+          "button": {
+            "variants": {
+              "primary": "brand"
+            }
+          }
+        }
+      }
+    }
+  },
   "elevation": {
     "modal": {
       "content": {
