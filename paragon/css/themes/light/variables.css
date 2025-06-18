@@ -30,6 +30,7 @@
   --pgn-elevation-box-shadow-level-3: 0px 8px 20px 0px rgba(0,0,0,0.15), 0px 10px 20px 0px rgba(0,0,0,0.15); /** Basic box shadow of level 3. */
   --pgn-elevation-box-shadow-level-4: 0px 8px 48px 0px rgba(0,0,0,0.15), 0px 20px 40px 0px rgba(0,0,0,0.15); /** Basic box shadow of level 4. */
   --pgn-other-btn-disabled-opacity: .3;
+  --pgn-color-btn-border-inverse-brand: #00000000;
   --pgn-color-btn-focus-outline-tertiary: #00000000;
   --pgn-color-popover-header-bg: #00000000;
   --pgn-color-white: #FFFFFFFF; /** White color. */
@@ -186,6 +187,7 @@
   --pgn-color-badge-bg-info: var(--pgn-color-accent-a);
   --pgn-color-btn-text-primary: var(--pgn-color-white);
   --pgn-color-btn-bg-outline-brand: var(--pgn-color-white);
+  --pgn-color-btn-bg-inverse-outline-brand: var(--pgn-color-white);
   --pgn-color-btn-bg-danger: var(--pgn-color-danger-600);
   --pgn-color-btn-bg-outline-danger: var(--pgn-color-white);
   --pgn-color-btn-bg-dark: var(--pgn-color-dark-600);
@@ -200,6 +202,7 @@
   --pgn-color-btn-bg-warning: var(--pgn-color-warning-600);
   --pgn-color-btn-bg-outline-warning: var(--pgn-color-white);
   --pgn-color-btn-hover-text-outline-brand: var(--pgn-color-white);
+  --pgn-color-btn-hover-text-inverse-outline-brand: var(--pgn-color-white);
   --pgn-color-btn-hover-text-outline-danger: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-dark: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-info: #FFFFFFFF;
@@ -208,6 +211,7 @@
   --pgn-color-btn-hover-text-outline-success: #FFFFFFFF;
   --pgn-color-btn-hover-text-outline-warning: #393939FF;
   --pgn-color-btn-hover-bg-brand: var(--pgn-color-white);
+  --pgn-color-btn-hover-bg-inverse-brand: var(--pgn-color-white);
   --pgn-color-btn-hover-bg-outline-danger: var(--pgn-color-danger-600);
   --pgn-color-btn-hover-bg-outline-dark: var(--pgn-color-dark-600);
   --pgn-color-btn-hover-bg-outline-info: var(--pgn-color-info-600);
@@ -215,15 +219,20 @@
   --pgn-color-btn-hover-bg-outline-success: var(--pgn-color-success-600);
   --pgn-color-btn-hover-bg-outline-warning: var(--pgn-color-warning-600);
   --pgn-color-btn-active-text-brand: var(--pgn-color-white);
+  --pgn-color-btn-active-text-inverse-brand: var(--pgn-color-white);
+  --pgn-color-btn-active-text-inverse-outline-brand: var(--pgn-color-white);
   --pgn-color-btn-active-text-primary: var(--pgn-color-white);
   --pgn-color-btn-active-bg-outline-brand: var(--pgn-color-white);
   --pgn-color-btn-active-bg-outline-primary: var(--pgn-color-white);
   --pgn-color-btn-active-bg-tertiary: var(--pgn-color-white);
   --pgn-color-btn-focus-text-brand: var(--pgn-color-white);
   --pgn-color-btn-focus-text-primary: var(--pgn-color-white);
+  --pgn-color-btn-focus-border-inverse-brand: var(--pgn-color-btn-border-inverse-brand);
+  --pgn-color-btn-focus-bg-inverse-outline-brand: var(--pgn-color-white);
   --pgn-color-btn-focus-bg-tertiary: var(--pgn-color-white);
   --pgn-color-btn-disabled-bg-brand: var(--pgn-color-brand-100);
   --pgn-color-btn-disabled-bg-outline-brand: var(--pgn-color-white);
+  --pgn-color-btn-disabled-bg-inverse-brand: var(--pgn-color-brand-100);
   --pgn-color-form-input-bg-base: var(--pgn-color-white);
   --pgn-color-form-input-focus-bg: var(--pgn-color-white);
   --pgn-color-form-feedback-valid: var(--pgn-color-success-base);
@@ -349,6 +358,7 @@
   --pgn-color-theme-default-light: var(--pgn-color-light-500); /** Theme-specific light default color. */
   --pgn-color-theme-default-dark: var(--pgn-color-dark-500); /** Theme-specific dark default color. */
   --pgn-color-theme-default-gray: var(--pgn-color-gray-500); /** Theme-specific gray default color. */
+  --pgn-color-btn-text-inverse-outline-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-text-danger: #FFFFFFFF;
   --pgn-color-btn-text-outline-danger: var(--pgn-color-btn-bg-danger);
   --pgn-color-btn-text-dark: #FFFFFFFF;
@@ -361,8 +371,10 @@
   --pgn-color-btn-text-warning: #393939FF;
   --pgn-color-btn-text-outline-warning: var(--pgn-color-btn-bg-warning);
   --pgn-color-btn-bg-brand: var(--pgn-color-brand-500);
+  --pgn-color-btn-bg-inverse-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-bg-light: var(--pgn-color-light-500);
   --pgn-color-btn-bg-primary: var(--pgn-color-primary-500);
+  --pgn-color-btn-border-inverse-outline-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-border-danger: var(--pgn-color-btn-bg-danger);
   --pgn-color-btn-border-outline-danger: var(--pgn-color-btn-bg-danger);
   --pgn-color-btn-border-dark: var(--pgn-color-btn-bg-dark);
@@ -374,8 +386,10 @@
   --pgn-color-btn-border-warning: var(--pgn-color-btn-bg-warning);
   --pgn-color-btn-border-outline-warning: var(--pgn-color-btn-bg-warning);
   --pgn-color-btn-hover-text-brand: var(--pgn-color-brand-500);
+  --pgn-color-btn-hover-text-inverse-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-hover-text-outline-light: #454545FF;
   --pgn-color-btn-hover-bg-outline-brand: var(--pgn-color-brand-500);
+  --pgn-color-btn-hover-bg-inverse-outline-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-hover-bg-danger: var(--pgn-color-theme-hover-danger);
   --pgn-color-btn-hover-bg-dark: var(--pgn-color-theme-hover-dark);
   --pgn-color-btn-hover-bg-info: var(--pgn-color-theme-hover-info);
@@ -385,6 +399,7 @@
   --pgn-color-btn-hover-bg-success: var(--pgn-color-theme-hover-success);
   --pgn-color-btn-hover-bg-warning: var(--pgn-color-theme-hover-warning);
   --pgn-color-btn-hover-border-brand: var(--pgn-color-brand-500);
+  --pgn-color-btn-hover-border-inverse-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-hover-border-outline-danger: var(--pgn-color-btn-hover-bg-outline-danger);
   --pgn-color-btn-hover-border-outline-dark: var(--pgn-color-btn-hover-bg-outline-dark);
   --pgn-color-btn-hover-border-outline-info: var(--pgn-color-btn-hover-bg-outline-info);
@@ -395,6 +410,8 @@
   --pgn-color-btn-active-text-outline-primary: var(--pgn-color-primary-500);
   --pgn-color-btn-active-text-tertiary: var(--pgn-color-primary-500);
   --pgn-color-btn-active-bg-brand: var(--pgn-color-brand-500);
+  --pgn-color-btn-active-bg-inverse-outline-brand: var(--pgn-color-brand-500);
+  --pgn-color-btn-active-bg-inverse-brand: var(--pgn-color-brand-500);
   --pgn-color-btn-active-bg-danger: var(--pgn-color-theme-active-danger);
   --pgn-color-btn-active-bg-outline-danger: var(--pgn-color-btn-bg-danger);
   --pgn-color-btn-active-bg-dark: var(--pgn-color-theme-active-dark);
@@ -486,6 +503,7 @@
   --pgn-color-theme-active-secondary: var(--pgn-color-secondary-900); /** Theme-specific secondary active color. */
   --pgn-color-btn-text-brand: #FFFFFFFF;
   --pgn-color-btn-text-outline-brand: var(--pgn-color-btn-bg-brand);
+  --pgn-color-btn-text-inverse-brand: #FFFFFFFF;
   --pgn-color-btn-text-light: #454545FF;
   --pgn-color-btn-text-outline-light: var(--pgn-color-btn-bg-light);
   --pgn-color-btn-bg-secondary: var(--pgn-color-secondary-600);
@@ -505,6 +523,7 @@
   --pgn-color-btn-hover-bg-secondary: var(--pgn-color-secondary-400);
   --pgn-color-btn-hover-bg-outline-secondary: var(--pgn-color-secondary-600);
   --pgn-color-btn-hover-border-outline-brand: var(--pgn-color-btn-hover-bg-outline-brand);
+  --pgn-color-btn-hover-border-inverse-outline-brand: var(--pgn-color-btn-hover-bg-outline-brand);
   --pgn-color-btn-hover-border-danger: var(--pgn-color-btn-hover-bg-danger);
   --pgn-color-btn-hover-border-dark: var(--pgn-color-btn-hover-bg-dark);
   --pgn-color-btn-hover-border-info: var(--pgn-color-btn-hover-bg-info);
@@ -605,11 +624,13 @@
   --pgn-color-btn-focus-bg-secondary: var(--pgn-color-btn-bg-secondary);
   --pgn-color-btn-focus-outline-brand: var(--pgn-color-btn-border-brand);
   --pgn-color-btn-focus-outline-outline-brand: var(--pgn-color-btn-border-outline-brand);
+  --pgn-color-btn-focus-outline-inverse-brand: var(--pgn-color-btn-border-brand);
   --pgn-color-btn-focus-outline-light: var(--pgn-color-btn-border-light);
   --pgn-color-btn-focus-outline-outline-light: var(--pgn-color-btn-border-outline-light);
   --pgn-color-btn-focus-outline-primary: var(--pgn-color-btn-border-primary);
   --pgn-color-btn-focus-outline-outline-primary: var(--pgn-color-btn-border-outline-primary);
   --pgn-color-btn-disabled-text-brand: var(--pgn-color-btn-text-brand);
+  --pgn-color-btn-disabled-text-inverse-brand: var(--pgn-color-btn-text-inverse-brand);
   --pgn-color-btn-disabled-text-outline-brand: var(--pgn-color-btn-text-outline-brand);
   --pgn-color-btn-disabled-text-light: var(--pgn-color-btn-text-light);
   --pgn-color-btn-disabled-text-outline-secondary: var(--pgn-color-btn-hover-text-outline-secondary);
