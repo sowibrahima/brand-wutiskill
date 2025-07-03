@@ -196,7 +196,7 @@
             "source": "$btn-danger-disabled-color"
           },
           "outline-danger": {
-            "$value": "{color.btn.hover.text.outline-danger}",
+            "$value": "{color.btn.text.outline-danger}",
             "$type": "color",
             "source": "$btn-danger-outline-disabled-color"
           }

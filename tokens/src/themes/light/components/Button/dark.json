@@ -196,7 +196,7 @@
             "source": "$btn-dark-disabled-color"
           },
           "outline-dark": {
-            "$value": "{color.btn.hover.text.outline-dark}",
+            "$value": "{color.btn.text.outline-dark}",
             "$type": "color",
             "source": "$btn-dark-outline-disabled-color"
           }

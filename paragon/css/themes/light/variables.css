@@ -458,12 +458,9 @@
   --pgn-color-btn-focus-bg-outline-success: var(--pgn-color-btn-bg-outline-success);
   --pgn-color-btn-focus-bg-warning: var(--pgn-color-btn-bg-warning);
   --pgn-color-btn-focus-bg-outline-warning: var(--pgn-color-btn-bg-outline-warning);
-  --pgn-color-btn-disabled-text-outline-danger: var(--pgn-color-btn-hover-text-outline-danger);
-  --pgn-color-btn-disabled-text-outline-dark: var(--pgn-color-btn-hover-text-outline-dark);
   --pgn-color-btn-disabled-text-outline-info: var(--pgn-color-btn-hover-text-outline-info);
   --pgn-color-btn-disabled-text-primary: var(--pgn-color-btn-text-primary);
   --pgn-color-btn-disabled-text-outline-primary: var(--pgn-color-primary-500);
-  --pgn-color-btn-disabled-text-outline-success: var(--pgn-color-btn-hover-text-outline-success);
   --pgn-color-btn-disabled-text-outline-warning: var(--pgn-color-btn-hover-text-outline-warning);
   --pgn-color-btn-disabled-bg-danger: var(--pgn-color-btn-bg-danger);
   --pgn-color-btn-disabled-bg-outline-danger: var(--pgn-color-btn-bg-outline-danger);
@@ -579,10 +576,13 @@
   --pgn-color-btn-focus-outline-warning: var(--pgn-color-btn-border-warning);
   --pgn-color-btn-focus-outline-outline-warning: var(--pgn-color-btn-border-outline-warning);
   --pgn-color-btn-disabled-text-danger: var(--pgn-color-btn-text-danger);
+  --pgn-color-btn-disabled-text-outline-danger: var(--pgn-color-btn-text-outline-danger);
   --pgn-color-btn-disabled-text-dark: var(--pgn-color-btn-text-dark);
+  --pgn-color-btn-disabled-text-outline-dark: var(--pgn-color-btn-text-outline-dark);
   --pgn-color-btn-disabled-text-info: var(--pgn-color-btn-text-info);
   --pgn-color-btn-disabled-text-outline-light: var(--pgn-color-btn-hover-text-outline-light);
   --pgn-color-btn-disabled-text-success: var(--pgn-color-btn-text-success);
+  --pgn-color-btn-disabled-text-outline-success: var(--pgn-color-btn-text-outline-success);
   --pgn-color-btn-disabled-text-warning: var(--pgn-color-btn-text-warning);
   --pgn-color-btn-disabled-bg-light: var(--pgn-color-btn-bg-light);
   --pgn-color-btn-disabled-bg-primary: var(--pgn-color-btn-bg-primary);

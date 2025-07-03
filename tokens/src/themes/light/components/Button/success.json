@@ -196,7 +196,7 @@
             "source": "$btn-success-disabled-color"
           },
           "outline-success": {
-            "$value": "{color.btn.hover.text.outline-success}",
+            "$value": "{color.btn.text.outline-success}",
             "$type": "color",
             "source": "$btn-success-outline-disabled-color"
           }
