@@ -4,7 +4,7 @@
       "family": {
         "sans": {
           "serif": {
-            "$value": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+            "$value": "\"Roboto Flex\", \"Inter\", \"Helvetica Neue\", Arial, sans-serif"
           }
         },
         "serif": {
