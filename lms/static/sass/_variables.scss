@@ -5,34 +5,34 @@
 // This allows the theme to be updated automatically when the design tokens change.
 
 // Primary & Brand
-$primary-color: var(--pgn-color-primary-base, #590D22);
-$secondary-color: var(--pgn-color-secondary-base, #707070);
-$brand-color: var(--pgn-color-brand-base, #FFBA08);
+$primary-color: #590D22;
+$secondary-color: #707070;
+$brand-color: #FFBA08;
 
 // Body
-$body-bg: var(--pgn-color-body-bg, #fff);
-$body-color: var(--pgn-color-body-base, #212529);
+$body-bg: #fff;
+$body-color: #212529;
 
 // Links
-$link-color: var(--pgn-color-link-base, #00688D);
-$link-hover-color: var(--pgn-color-link-hover, #004972);
+$link-color: #00688D;
+$link-hover-color: #004972;
 
 // Grays
-$gray-100: var(--pgn-color-gray-100, #EBEBEB);
-$gray-200: var(--pgn-color-gray-200, #CCCCCC);
-$gray-300: var(--pgn-color-gray-300, #ADADAD);
-$gray-400: var(--pgn-color-gray-400, #8F8F8F);
-$gray-500: var(--pgn-color-gray-500, #707070);
-$gray-600: var(--pgn-color-gray-600, #5C5C5C);
-$gray-700: var(--pgn-color-gray-700, #454545);
-$gray-800: var(--pgn-color-gray-800, #333333);
-$gray-900: var(--pgn-color-gray-900, #212529);
+$gray-100: #EBEBEB;
+$gray-200: #CCCCCC;
+$gray-300: #ADADAD;
+$gray-400: #8F8F8F;
+$gray-500: #707070;
+$gray-600: #5C5C5C;
+$gray-700: #454545;
+$gray-800: #333333;
+$gray-900: #212529;
 
 // System Colors
-$success: var(--pgn-color-success-base, #0D7D4D);
-$info: var(--pgn-color-info-base, #00688D);
-$warning: var(--pgn-color-warning-base, #D6B600);
-$danger: var(--pgn-color-danger-base, #AB0D02);
+$success: #0D7D4D;
+$info: #00688D;
+$warning: #D6B600;
+$danger: #AB0D02;
 
 // Typography
 $font-family-sans-serif: 'Roboto Flex', var(--pgn-font-family-sans, sans-serif);
