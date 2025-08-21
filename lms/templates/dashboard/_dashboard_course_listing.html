@@ -1,9 +1,0 @@
-<%page args="course_overview, enrollment, entitlement, entitlement_session, course_card_index, enrollments_fbe_is_on, is_unfulfilled_entitlement, is_fulfilled_entitlement, entitlement_available_sessions, entitlement_expiration_date, entitlement_expired_at, show_courseware_link, cert_status, can_refund_entitlement, can_unenroll, credit_status, show_email_settings, course_mode_info, is_paid_course, is_course_voucher_refundable, course_requirements, dashboard_index, share_settings, related_programs, display_course_modes_on_dashboard, show_consent_link, enterprise_customer_name, resume_button_url, partner_managed_enrollment" expression_filter="h"/>
-
-<%inherit file="../../edx-platform/lms/templates/dashboard/_dashboard_course_listing.html" />
-
-<%block name="course_card_article">
-    <article class="course course-card${mode_class}" aria-labelledby="course-title-${enrollment.course_id}" id="course-card-${course_card_index}">
-        ${parent.body()}
-    </article>
-</%block>

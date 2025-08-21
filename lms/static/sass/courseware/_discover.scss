@@ -4,40 +4,72 @@
     margin: 0 !important;
     max-width: 100%;
     @include media-breakpoint-up(lg) {
-        margin-top: 64px !important;
+        margin-top: 32px !important;
     }
 }
 .course-heading-area {
-    margin: 0 0 20px;
-    font-size: 14px;
-    color: #515661;
-    @include media-breakpoint-up(md) {
-        margin: 0 0 30px;
-        font-size: 16px;
-        line-height: 20px;
+    margin: 0 0 32px;
+    text-align: center;
+    padding: 40px 16px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    
+    @include media-breakpoint-up(lg) {
+        margin: 0 0 48px;
+        padding: 40px 32px;
     }
+    
     h2 {
-        color: #111827;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
-        margin: 0 0 8px;
+        color: #0f172a;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0 0 16px;
+        letter-spacing: -0.02em;
+        
         @include media-breakpoint-up(md) {
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0 0 12px;
+            font-size: 36px;
+            margin: 0 0 20px;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 42px;
         }
     }
+    
     p {
         margin: 0;
+        font-size: 16px;
+        color: #64748b;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+        font-weight: 400;
+        
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+            line-height: 1.7;
+        }
     }
 }
 .find-courses {
     padding-bottom: 0 !important;
     .courses-container {
-        padding: 25px 0;
+        padding: 16px 20px;
+        max-width: 1440px;
+        margin: 0 auto;
+        
+        @include media-breakpoint-up(sm) {
+            padding: 20px 32px;
+        }
+        
         @include media-breakpoint-up(md) {
-            padding: 30px 0;
+            padding: 24px 48px;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            padding: 32px 64px;
         }
     }
     .course-holder {
@@ -48,112 +80,180 @@
 .courses-container {
     .courses {
         .courses-listing {
-            letter-spacing: -.32em;
-            margin: 0 -2.5%;
-            @media only screen and (min-width: $big-screen) {
-                margin: 0 -1.5%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+            @include media-breakpoint-up(sm) {
+                gap: 28px;
             }
+            
+            @include media-breakpoint-up(lg) {
+                gap: 32px;
+            }
+            
             li {
-                letter-spacing: normal;
-                float: none !important;
-                display: inline-block !important;
-                vertical-align: top;
-                width: 95% !important;
-                margin: 0 2.5% 25px !important;
+                display: block;
+                flex: 1 1 300px;
+                min-width: 300px;
+                max-width: 450px;
+                margin: 0 !important;
                 max-height: unset !important;
+                
                 @include media-breakpoint-up(sm) {
-                    width: 45% !important;
+                    flex: 1 1 320px;
+                    min-width: 320px;
                 }
-                @include media-breakpoint-up(md) {
-                    width: 28.33% !important;
+                
+                @include media-breakpoint-up(lg) {
+                    flex: 1 1 350px;
+                    min-width: 350px;
                 }
-                @media only screen and (min-width: $big-screen) {
-                    width: calc(25% - 3%) !important;
-                    margin: 0 1.5% 25px !important;
-                }
+                
                 .course {
                     margin: 0;
-                    border: none;
-                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.10);
-                    border-radius: 8px;
+                    border: 1px solid #e5e7eb;
+                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                    border-radius: 16px;
                     overflow: hidden;
                     background: #fff;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    &:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                        border-color: #d1d5db;
+                    }
+                    
                     .course-image {
+                        position: relative;
+                        overflow: hidden;
+                        
                         .cover-image {
-                            height: 162px;
+                            height: 200px;
+                            position: relative;
+                            
                             &:before {
                                 display: none;
                             }
-                            img{
+                            
+                            img {
                                 object-fit: cover;
                                 object-position: center;
                                 height: 100%;
+                                width: 100%;
+                                transition: transform 0.3s ease;
                             }
                         }
+                        
+                        &:hover img {
+                            transform: scale(1.05);
+                        }
                     }
+                    
                     .course-info {
                         height: auto;
                         font-family: $font-family-title;
-                        padding: 10px 20px 0;
+                        padding: 24px;
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        
                         .course-code {
                             display: none;
                         }
+                        
                         h2 {
                             font-family: $font-family-title;
-                            height: 72px;
+                            height: auto;
+                            margin-bottom: 16px;
                         }
+                        
                         .course-title {
-                            color: #292C2E;
-                            font-size: 16px;
-                            line-height: 22px;
+                            color: #111827;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 26px;
                             height: auto;
                             padding: 0;
-                            margin: 0 0 5px;
+                            margin: 0 0 8px;
                             white-space: unset;
                             overflow: hidden !important;
                             text-overflow: ellipsis;
                             display: -webkit-box !important;
                             -webkit-line-clamp: 2;
+                            line-clamp: 2;
                             -webkit-box-orient: vertical;
                         }
+                        
                         .course-organization {
-                            color: #6c7885;
+                            color: #6b7280;
                             font-size: 14px;
+                            font-weight: 500;
                             line-height: 20px;
                             height: auto;
                             padding: 0;
-                            margin: 0 0 15px;
+                            margin: 0 0 20px;
                             display: block;
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
                         }
+                        
                         .learn-more {
-                            display: block;
-                            border-radius: 6px;
-                            background: $primary;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 12px;
+                            background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
                             text-align: center;
-                            padding: 9px 17px;
+                            padding: 12px 24px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 20px;
+                            margin: auto 0 0 0;
+                            color: #fff;
+                            text-decoration: none;
+                            transition: all 0.2s ease;
+                            box-shadow: 0 4px 14px 0 rgba($primary, 0.25);
+                            
+                            &:hover {
+                                transform: translateY(-2px);
+                                box-shadow: 0 6px 20px 0 rgba($primary, 0.35);
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                            
+                            &:active {
+                                transform: translateY(0);
+                            }
+                        }
+                        
+                        .course-date {
+                            border-top: 1px solid #f3f4f6;
+                            padding: 16px 24px;
+                            margin: 24px -24px 0;
+                            color: #6b7280;
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 20px;
-                            margin: 0 0 30px;
-                            color: #fff;
-                            &:hover {
-                                opacity: .8;
-                            }
-                        }
-                        .course-date {
-                            border-top: 1px solid #ECF0F4;
-                            padding: 10px 20px;
-                            margin: 0 -20px;
-                            color: #515661;
-                            font-size: 14px;
-                            line-height: 20px;
+                            background: #f9fafb;
+                            display: flex;
+                            align-items: center;
+                            
                             svg {
                                 display: inline-block;
-                                margin: -4px 10px 0 0;
+                                margin: 0 8px 0 0;
                                 vertical-align: middle;
+                                flex-shrink: 0;
                             }
                         }
                     }
@@ -163,10 +263,14 @@
     }
 }
 .saerch-bar-discover {
-    margin:  0 0 25px;
+    margin: 0 0 40px;
     display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    
     @include media-breakpoint-up(md) {
-        margin:  0 0 30px;
+        margin: 0 0 48px;
+        gap: 20px;
     }
     &:after {
         display: block;
@@ -210,61 +314,90 @@
                     content: "";
                 }
                 .button-holder {
-                    float: right;
+                    display: flex;
+                    align-items: center;
+                    
                     button {
                         position: static;
                         margin: 0 0 0 16px;
-                        min-width: 90px;
+                        min-width: 120px;
                         color: #fff;
                         font-size: 16px;
-                        font-weight: 500;
-                        line-height: 26px;
+                        font-weight: 600;
+                        line-height: 24px;
                         text-align: center;
-                        padding: 6px;
-                        height: 38px;
-                        border-radius: 6px;
-                        background: $primary;
+                        padding: 12px 24px;
+                        height: 48px;
+                        border-radius: 12px;
+                        background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
                         font-family: $font-family-title;
                         border: none;
-                        box-shadow: none !important;
+                        box-shadow: 0 4px 14px 0 rgba($primary, 0.25);
+                        transition: all 0.2s ease;
+                        cursor: pointer;
+                        
                         @include media-breakpoint-up(sm) {
-                            min-width: 100px;
+                            min-width: 140px;
                         }
+                        
                         &:hover {
-                            background: $primary;
-                            opacity: .8;
+                            transform: translateY(-2px);
+                            box-shadow: 0 6px 20px 0 rgba($primary, 0.35);
+                        }
+                        
+                        &:active {
+                            transform: translateY(0);
                         }
                     }
                 }
                 .input-holder {
                     flex-grow: 1;
-                    border-radius: 6px;
-                    background: $primary-light;
-                    padding: 0 0 0 33px;
+                    border-radius: 12px;
+                    background: #fff;
+                    border: 2px solid #e2e8f0;
+                    padding: 0 0 0 48px;
                     position: relative;
+                    transition: all 0.2s ease;
+                    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+                    
+                    &:focus-within {
+                        border-color: $primary;
+                        box-shadow: 0 0 0 3px rgba($primary, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                    }
+                    
                     svg {
                         position: absolute;
-                        left: 12px;
+                        left: 16px;
                         font-size: 20px;
-                        top: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: all 0.2s ease;
 
                         path {
-                          fill: #4a5564;
+                            fill: #9ca3af;
                         }
                     }
+                    
+                    &:focus-within svg path {
+                        fill: $primary;
+                    }
+                    
                     input {
                         border: none;
                         box-shadow: none;
-                        height: 38px;
+                        height: 48px;
                         width: 100%;
-                        background: none;
+                        background: transparent;
                         outline: none;
-                        font-size: 14px;
-                        line-height: 20px;
-                        padding: 9px 10px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding: 12px 16px 12px 0;
+                        color: #1f2937;
+                        font-weight: 400;
 
                         &::placeholder {
-                            color: #4a5564;
+                            color: #9ca3af;
+                            font-weight: 400;
                         }
                     }
                 }
