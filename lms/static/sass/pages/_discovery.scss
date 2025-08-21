@@ -1,0 +1,45 @@
+// Styles for the course discovery (catalog) page
+
+.brand-wutiskill-discovery {
+  .discovery-wrapper {
+    max-width: var(--pgn-size-container-max-width, 1400px);
+    margin: 0 auto;
+    padding: var(--pgn-spacing-8, 2rem);
+  }
+
+  // Search bar styling
+  .search-bar {
+    margin-bottom: var(--pgn-spacing-8, 2rem);
+    display: flex;
+
+    .search-input {
+      flex-grow: 1;
+      padding: var(--pgn-spacing-4, 1rem);
+      border: 1px solid var(--pgn-color-border-light);
+      border-radius: var(--pgn-border-radius-lg, 0.5rem) 0 0 var(--pgn-border-radius-lg, 0.5rem);
+      font-size: var(--pgn-font-size-body, 1rem);
+
+      &:focus {
+        outline: none;
+        border-color: var(--pgn-color-brand-base);
+        box-shadow: 0 0 0 3px rgba(var(--pgn-color-brand-rgb), 0.2);
+      }
+    }
+
+    .search-button {
+      border-radius: 0 var(--pgn-border-radius-lg, 0.5rem) var(--pgn-border-radius-lg, 0.5rem) 0;
+    }
+  }
+
+  // Course grid
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--pgn-spacing-8, 2rem);
+  }
+
+  // Use the same card styling from the dashboard for consistency
+  .course-card {
+    @extend %course-card;
+  }
+}

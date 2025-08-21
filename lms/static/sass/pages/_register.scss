@@ -1,0 +1,32 @@
+// Styles for the registration page
+
+.brand-wutiskill-register {
+  @extend .brand-wutiskill-login; // Inherit base styles from login
+
+  .register-container {
+    @extend .login-container; // Inherit container styles
+    max-width: 600px; // Wider for more fields
+  }
+
+  .register-title {
+    @extend .login-title; // Inherit title styles
+  }
+
+  .form-field {
+    @extend .form-field; // Inherit form-field styles
+  }
+
+  .submit-button {
+    @extend .submit-button; // Inherit button styles
+  }
+
+  .honor-code {
+    font-size: var(--pgn-font-size-sm, 0.875rem);
+    margin-top: var(--pgn-spacing-6, 1.5rem);
+    color: var(--pgn-color-text-secondary);
+  }
+
+  .login-prompt {
+    @extend .login-extra; // Inherit extra link styles
+  }
+}

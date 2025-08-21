@@ -1,0 +1,22 @@
+// brand-wutiskill/lms/static/sass/components/_footer.scss
+
+.main-footer {
+  background-color: var(--pgn-color-dark-base, #1F453D);
+  color: var(--pgn-color-white, #fff);
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+
+  .footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    // Add more footer styles here
+  }
+
+  a {
+    color: var(--pgn-color-gray-300, #ADADAD);
+    &:hover {
+      color: var(--pgn-color-white, #fff);
+      text-decoration: none;
+    }
+  }
+}

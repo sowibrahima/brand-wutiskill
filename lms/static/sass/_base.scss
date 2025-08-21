@@ -1,0 +1,45 @@
+// brand-wutiskill/lms/static/sass/_base.scss
+
+// Base styles for the theme.
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-feature-settings: "liga" 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: var(--pgn-color-headings-base, #1F453D);
+  font-weight: var(--pgn-typography-font-weight-normal, 400);
+}
+
+// Container
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+// Cards
+.card {
+  background-color: var(--pgn-color-white, #fff);
+  border: $border-width solid $border-color;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow-sm;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}

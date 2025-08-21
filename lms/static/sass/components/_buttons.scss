@@ -1,0 +1,41 @@
+// brand-wutiskill/lms/static/sass/components/_buttons.scss
+
+.btn {
+  display: inline-block;
+  font-weight: var(--pgn-typography-btn-font-weight, 400);
+  color: var(--pgn-color-body-base, #212529);
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: $border-width solid transparent;
+  padding: var(--pgn-spacing-btn-padding-y-base, .375rem) var(--pgn-spacing-btn-padding-x-base, .75rem);
+  font-size: var(--pgn-typography-btn-font-size-base, 1rem);
+  line-height: var(--pgn-typography-btn-line-height-base, 1.5);
+  border-radius: $border-radius;
+  transition: var(--pgn-transition-btn, color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out);
+}
+
+.btn-primary {
+  color: var(--pgn-color-btn-text-primary, #fff);
+  background-color: var(--pgn-color-btn-bg-primary, #590D22);
+  border-color: var(--pgn-color-btn-border-primary, #590D22);
+
+  &:hover {
+    color: var(--pgn-color-btn-hover-text-primary, #fff);
+    background-color: var(--pgn-color-btn-hover-bg-primary, #3F0716);
+    border-color: var(--pgn-color-btn-hover-border-primary, #31040F);
+  }
+}
+
+.btn-brand {
+  color: var(--pgn-color-btn-text-brand, #212529);
+  background-color: var(--pgn-color-btn-bg-brand, #FFBA08);
+  border-color: var(--pgn-color-btn-border-brand, #FFBA08);
+
+  &:hover {
+    color: var(--pgn-color-btn-hover-text-brand, #212529);
+    background-color: var(--pgn-color-btn-hover-bg-brand, #D49900);
+    border-color: var(--pgn-color-btn-hover-border-brand, #C99200);
+  }
+}

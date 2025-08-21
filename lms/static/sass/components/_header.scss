@@ -1,0 +1,39 @@
+// brand-wutiskill/lms/static/sass/components/_header.scss
+
+.main-header {
+  background-color: var(--pgn-color-white, #fff);
+  border-bottom: $border-width solid $border-color;
+  padding: 1rem 1.5rem;
+  box-shadow: $box-shadow-sm;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    // Add logo styling here
+    img {
+      max-height: 40px;
+    }
+  }
+
+  .site-nav {
+    // Add navigation styling here
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+}
