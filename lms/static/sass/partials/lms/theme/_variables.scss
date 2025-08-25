@@ -1,13 +1,28 @@
 $primary: #590D22;
-$primary-light: #F396A5FF;
+$primary-light: #f8f7f2;
 
-// Theme fonts
-$font-family-title: 'Inter', sans-serif;
-$serif: Crimson;
-$f-sans-serif: Crimson, 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+// Brand Colors
+$brand-primary: #590D22;
+$brand-secondary: #FFBA08;
+$text-dark: #1f2937;
+$text-light: #6b7280;
+$bg-light: #F3F1EDFF;
+$bg-light2: #eeede8;
+$white: #ffffff;
+
+// Theme fonts - Bold, modern typography
+$font-family-title: 'Roboto Flex', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-primary: 'Roboto Flex', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-heading: 'Roboto Flex', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$serif: 'Inter', sans-serif;
+$f-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
+
+// Import course card styles
+@import 'course-card';
 
 
 // Introducing new variables
@@ -20,8 +35,8 @@ $big-screen: 1200px;
 
 // Introducing dark-theme variables
 
-$primary-d: #AEC7F6;
-$primary-light-d: #292A2C;
+$primary-d: #E23162;
+$primary-light-d: #240209;
 $gray-light: #E5E7EB;
 $gray-lighter: #c8c8c8;
 $light-dark-d: #374151;
@@ -31,12 +46,12 @@ $border-color-d: #777792;
 $light-overlay-d: #36383B;
 $danger-d: #FFA07A;
 $success-d: #54CF5E;
-$btn-color-d: #112F6B;
+$btn-color-d: #4A091B;
 $body-bg-d: #0D0D0E;
 
 $instructor-input-border-color: $gray-lighter;
-$light-theme-switch-bg-color: #1D386A;
-$dark-theme-switch-bg-color: #717D8A;
+$light-theme-switch-bg-color: #590D22;
+$dark-theme-switch-bg-color: #E23162;
 
 $warning-400: #ffe340;
 $warning-700: #9c4607;

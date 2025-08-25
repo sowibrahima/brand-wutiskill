@@ -147,6 +147,7 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 32px;
   .courses-listing-item {
     margin: 0 20px 30px 20px;
     // Fix right margin
@@ -205,9 +206,9 @@ nav.wrapper-preview-menu {
 
 
 /////////////////// Course search
-.find-courses, .university-profile {
-  background-color: #fff;
-}
+//.find-courses, .university-profile {
+//  background-color: #fff;
+//}
 
 /////////////////// User profile
 .view-profile .profile-self .wrapper-profile-field-account-privacy {
@@ -925,7 +926,7 @@ body.indigo-dark-theme {
     accent-color: $primary-d;
     scrollbar-color: $text-color-d $body-bg-d;
   }
-  .find-courses, .university-profile {
+  .university-profile {
     background-color: $body-bg-d;
   }
   .ui-state-default,
@@ -1708,6 +1709,20 @@ body.indigo-dark-theme {
   }
 }
 
+@import '../../../extra/footer';
+@import '../../../extra/header';
 @import '../../../dashboard/dashboard';
 @import '../../../courseware/discover';
+@import '../../../courseware/about';
+@import '../../../courseware/bookmarks';
 @import '../../../home/home';
+@import '../../../programs/programs';
+@import '../../../certificates/certificate';
+@import '../../../xblock/xblock';
+@import '../../../views/teams';
+@import '../../../views/wiki';
+@import '../../../courseware/responsive-nav';
+
+// Import custom css
+@import './css/core/index.css';
+@import './css/themes/light/index.css';

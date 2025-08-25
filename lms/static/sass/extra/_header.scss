@@ -319,7 +319,7 @@ header.global-header {
 
 .theme-toggle-button{
     position: relative;
-    display: {% if INDIGO_ENABLE_DARK_TOGGLE %}flex{% else %}none{% endif %};
+    display: none;
     align-items: center;
     margin-right: 0 !important;
 

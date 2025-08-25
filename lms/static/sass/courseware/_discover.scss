@@ -1,12 +1,19 @@
 // Include custom discover
-.window-wrap #content.content-wrapper {
-    padding: 0 !important;
-    margin: 0 !important;
-    max-width: 100%;
-    @include media-breakpoint-up(lg) {
-        margin-top: 32px !important;
+.window-wrap {
+    background: $bg-light;
+
+    #content.content-wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100%;
+        background: $bg-light;
+        
+        @include media-breakpoint-up(lg) {
+            margin-top: 32px !important;
+        }
     }
 }
+
 .course-heading-area {
     margin: 0 0 32px;
     text-align: center;
@@ -55,6 +62,7 @@
 }
 .find-courses {
     padding-bottom: 0 !important;
+    background: transparent;
     .courses-container {
         padding: 16px 20px;
         max-width: 1440px;
@@ -97,9 +105,9 @@
             
             li {
                 display: block;
-                flex: 1 1 300px;
-                min-width: 300px;
-                max-width: 450px;
+                flex: 1 1 200px;
+                min-width: 200px;
+                max-width: 350px;
                 margin: 0 !important;
                 max-height: unset !important;
                 
@@ -302,102 +310,91 @@
     }
     .discover-search {
         width: 100%;
+        margin-bottom: 32px;
+        
         .wrapper-search-context {
             .wrapper-search-input {
                 float: none;
                 display: flex;
+                align-items: stretch;
                 margin: 0;
                 width: auto;
-                &:after {
-                    display: block;
-                    clear: both;
-                    content: "";
+                max-width: 600px;
+                margin: 0 auto;
+                background: $white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                border: none;
+                transition: all 0.3s ease;
+                overflow: hidden;
+                
+                &:focus-within {
+                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba($brand-primary, 0.1);
                 }
-                .button-holder {
+                
+                &:after {
+                    display: none;
+                }
+                
+                .input-holder {
+                    flex: 1;
                     display: flex;
                     align-items: center;
-                    
-                    button {
-                        position: static;
-                        margin: 0 0 0 16px;
-                        min-width: 120px;
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 600;
-                        line-height: 24px;
-                        text-align: center;
-                        padding: 12px 24px;
-                        height: 48px;
-                        border-radius: 12px;
-                        background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
-                        font-family: $font-family-title;
-                        border: none;
-                        box-shadow: 0 4px 14px 0 rgba($primary, 0.25);
-                        transition: all 0.2s ease;
-                        cursor: pointer;
-                        
-                        @include media-breakpoint-up(sm) {
-                            min-width: 140px;
-                        }
-                        
-                        &:hover {
-                            transform: translateY(-2px);
-                            box-shadow: 0 6px 20px 0 rgba($primary, 0.35);
-                        }
-                        
-                        &:active {
-                            transform: translateY(0);
-                        }
-                    }
-                }
-                .input-holder {
-                    flex-grow: 1;
-                    border-radius: 12px;
-                    background: #fff;
-                    border: 2px solid #e2e8f0;
-                    padding: 0 0 0 48px;
                     position: relative;
-                    transition: all 0.2s ease;
-                    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-                    
-                    &:focus-within {
-                        border-color: $primary;
-                        box-shadow: 0 0 0 3px rgba($primary, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-                    }
+                    padding: 0 20px;
                     
                     svg {
-                        position: absolute;
-                        left: 16px;
-                        font-size: 20px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        transition: all 0.2s ease;
-
+                        margin-right: 12px;
+                        flex-shrink: 0;
+                        
                         path {
                             fill: #9ca3af;
                         }
                     }
-                    
-                    &:focus-within svg path {
-                        fill: $primary;
-                    }
-                    
-                    input {
-                        border: none;
+                
+                    .discovery-input {
                         box-shadow: none;
-                        height: 48px;
-                        width: 100%;
-                        background: transparent;
+                        flex: 1;
+                        border: none;
                         outline: none;
+                        padding: 16px 0;
                         font-size: 16px;
-                        line-height: 24px;
-                        padding: 12px 16px 12px 0;
-                        color: #1f2937;
-                        font-weight: 400;
-
+                        font-family: $font-family-primary;
+                        background: transparent;
+                        
                         &::placeholder {
-                            color: #9ca3af;
-                            font-weight: 400;
+                            color: $text-light;
+                        }
+                    }
+                }
+                
+                .button-holder {
+                    display: flex;
+                    align-items: stretch;
+                    
+                    button {
+                        position: static;
+                        margin: 0;
+                        min-width: 100px;
+                        color: $white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 1;
+                        text-align: center;
+                        padding: 16px 24px;
+                        height: 100%;
+                        background: $brand-primary;
+                        border: none;
+                        border-radius: 0;
+                        transition: all 0.3s ease;
+                        font-family: $font-family-primary;
+                        
+                        &:hover {
+                            background: darken($brand-primary, 10%);
+                        }
+                        
+                        @include media-breakpoint-up(sm) {
+                            min-width: 120px;
                         }
                     }
                 }
