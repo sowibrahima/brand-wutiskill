@@ -1,17 +1,17 @@
 {
-  "name": "@edx/elm-theme",
+  "name": "@wutiskill/elm-theme",
   "version": "1.0.0",
-  "description": "A package containing brand elements and SASS themes for edx.org",
+  "description": "A package containing brand elements and SASS themes for wutiskill based on edX's elm-theme.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/elm-theme.git"
+    "url": "git+https://github.com/wutiskill/elm-theme.git"
   },
-  "author": "edX",
+  "author": "wutiskill",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/edx/elm-theme/issues"
+    "url": "https://github.com/wutiskill/elm-theme/issues"
   },
-  "homepage": "https://github.com/edx/elm-theme#readme",
+  "homepage": "https://github.com/wutiskill/elm-theme#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -24,7 +24,7 @@
     "paragon:help": "paragon help"
   },
   "devDependencies": {
-    "@openedx/paragon": "^23.14.0",
+    "@openedx/paragon": "^23.14.2",
     "nodemon": "^3.1.4"
   }
 }

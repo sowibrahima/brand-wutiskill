@@ -1,27 +1,30 @@
-// Global background color
+// Swiss design - clean, minimal, functional
 body {
-    background-color: #faf9f5;
+    background-color: $bg-primary;
+    color: $text-primary;
+    font-family: $font-family-primary;
+    line-height: $line-height-normal;
 }
 
-// Include custom home
+// Swiss home page design
 section.home {
-    font-family: $font-family-primary;
+    font-family: $font-family-ui;
     
     .container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 $spacing-md;
         
         @include media-breakpoint-up(sm) {
-            padding: 0 32px;
+            padding: 0 $spacing-lg;
         }
         
         @include media-breakpoint-up(md) {
-            padding: 0 48px;
+            padding: 0 $spacing-xl;
         }
         
         @include media-breakpoint-up(lg) {
-            padding: 0 64px;
+            padding: 0 $spacing-2xl;
         }
     }
 }
@@ -44,7 +47,7 @@ section.home {
             .btn {
                 padding: 16px 32px;
                 font-size: 16px;
-                border-radius: 8px;
+                border-radius: $border-radius-md;
                 font-weight: 600;
                 display: inline-block;
                 transition: all 0.2s ease;
@@ -79,15 +82,19 @@ section.home {
 
 #main .home.style-logout  {
     header {
-        //background: linear-gradient(135deg, $white 0%, lighten($brand-secondary, 43%) 100%);
         overflow: visible;
-        padding: 80px 0 100px;
+        padding: $spacing-3xl 0;
         position: relative;
+        background: linear-gradient(180deg, $bg-primary 0%, $bg-secondary 100%);
 
         .outer-wrapper {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 $spacing-md;
+            
+            @include media-breakpoint-up(md) {
+                padding: 0 $spacing-xl;
+            }
             
             .title {
                 width: 100%;
@@ -99,11 +106,11 @@ section.home {
                 .hero-content {
                     display: flex;
                     align-items: center;
-                    gap: 60px;
+                    gap: $spacing-2xl;
                     
                     @media (max-width: 768px) {
                         flex-direction: column;
-                        gap: 40px;
+                        gap: $spacing-xl;
                         text-align: center;
                     }
                     
@@ -114,42 +121,43 @@ section.home {
                         
                         h1 {
                             font-family: $font-family-heading;
-                            color: #000000;
-                            font-size: 64px;
-                            font-weight: 800;
-                            line-height: 1.1;
-                            margin: 0 0 24px;
-                            letter-spacing: -0.025em;
+                            color: $text-primary;
+                            font-size: $font-size-4xl;
+                            font-weight: 300;
+                            line-height: $line-height-tight;
+                            margin: 0 0 $spacing-lg;
+                            letter-spacing: -0.02em;
                             
                             @media (max-width: 768px) {
-                                font-size: 36px;
+                                font-size: $font-size-2xl;
                             }
                             
                             .highlight {
                                 color: $brand-primary;
+                                font-weight: 500;
                             }
                         }
                         
                         p {
-                            font-family: $font-family-primary;
-                            color: #374151;
-                            font-size: 20px;
+                            font-family: $font-family-ui;
+                            color: $text-secondary;
+                            font-size: $font-size-lg;
                             font-weight: 400;
-                            line-height: 1.5;
-                            margin: 0 0 32px;
+                            line-height: $line-height-normal;
+                            margin: 0 0 $spacing-xl;
                             
                             &:first-of-type {
-                                font-size: 18px;
-                                color: #6b7280;
+                                font-size: $font-size-sm;
+                                color: $text-tertiary;
                                 font-weight: 500;
-                                margin-bottom: 16px;
+                                margin-bottom: $spacing-md;
                                 text-transform: uppercase;
                                 letter-spacing: 0.05em;
                             }
                             
                             &.hero-description {
-                                font-size: 20px;
-                                margin-bottom: 40px;
+                                font-size: $font-size-lg;
+                                margin-bottom: $spacing-2xl;
                                 max-width: 500px;
                             }
                         }
@@ -170,43 +178,42 @@ section.home {
                 }
                 
                 .heading-group {
-                    margin: 0 0 40px;
+                    margin: 0 0 $spacing-2xl;
                     text-align: left;
                     padding: 0;
                 }
                 .course-search {
                     padding: 0;
-                    margin-top: 16px;
+                    margin-top: $spacing-md;
                     
                     .search-field-wrapper {
                         display: flex;
                         max-width: 500px;
-                        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-                        border-radius: 12px;
+                        border-radius: $border-radius-xl;
                         overflow: hidden;
-                        border: 1px solid transparent;
-                        transition: all 0.3s ease;
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        box-shadow: $shadow-md;
                         
                         &:focus-within {
-                            border-color: $brand-primary;
+                            box-shadow: $shadow-lg;
                         }
 
                         .input-holder {
                             flex-grow: 1;
-                            background: $white;
+                            background: $bg-primary;
                             padding: 0 0 0 48px;
                             position: relative;
                             display: block;
                             
                             svg {
                                 position: absolute;
-                                left: 16px;
+                                left: $spacing-md;
                                 width: 20px;
                                 height: 20px;
                                 top: 50%;
                                 transform: translateY(-50%);
                                 path {
-                                    fill: $text-light;
+                                    fill: $text-tertiary;
                                 }
                             }
                             
@@ -217,13 +224,13 @@ section.home {
                                 width: 100%;
                                 background: none;
                                 outline: none;
-                                font-size: 16px;
-                                line-height: 20px;
-                                padding: 14px 16px;
-                                font-family: $font-family-primary;
+                                font-size: $font-size-base;
+                                line-height: $line-height-normal;
+                                padding: $spacing-md $spacing-md;
+                                font-family: $font-family-ui;
                                 
                                 &::placeholder {
-                                    color: $text-light;
+                                    color: $text-tertiary;
                                 }
 
                                 &:focus,
@@ -239,25 +246,48 @@ section.home {
                             button {
                                 position: static;
                                 margin: 0;
-                                min-width: 120px;
-                                color: $white;
-                                font-size: 16px;
-                                font-weight: 600;
+                                min-width: 100px;
+                                color: $bg-primary;
+                                font-size: $font-size-base;
+                                font-weight: 500;
                                 line-height: 1;
                                 text-align: center;
-                                padding: 0 24px;
+                                padding: 0 $spacing-lg;
                                 height: 100%;
                                 border-radius: 0;
                                 background: $brand-primary;
-                                font-family: $font-family-primary;
+                                font-family: $font-family-ui;
                                 border: none;
-                                transition: all 0.3s ease;
+                                transition: background 0.2s ease;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                position: relative;
+                                overflow: hidden;
+                                
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background: rgba(255, 255, 255, 0.2);
+                                    opacity: 0;
+                                    transition: opacity 0.2s ease;
+                                }
                                 
                                 &:hover {
-                                    background: darken($brand-primary, 10%);
+                                    background: $brand-primary;
+                                    
+                                    &::before {
+                                        opacity: 1;
+                                    }
+                                    
+                                    > span {
+                                        position: relative;
+                                        z-index: 1;
+                                    }
                                 }
                             }
                         }
@@ -270,38 +300,40 @@ section.home {
 
 // New Homepage Sections Styling
 
-// Section Headers
+// Swiss Section Headers - clean, minimal, focused
 .section-header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: $spacing-2xl;
     
     h2 {
-        font-family: $font-family-primary;
-        font-size: 36px;
-        font-weight: 700;
-        color: $text-dark;
-        margin-bottom: 16px;
+        font-family: $font-family-heading;
+        font-size: $font-size-2xl;
+        font-weight: 300;
+        color: $text-primary;
+        margin-bottom: $spacing-md;
+        letter-spacing: -0.01em;
         
         @media (max-width: 768px) {
-            font-size: 28px;
+            font-size: $font-size-xl;
         }
     }
     
     p {
-        font-size: 18px;
-        color: $text-light;
+        font-size: $font-size-lg;
+        color: $text-secondary;
         max-width: 600px;
         margin: 0 auto;
+        line-height: $line-height-normal;
     }
 }
 
-// Featured Courses Section
+// Premium Featured Courses Section - elevated and refined
 .featured-courses {
-    padding: 80px 0;
-    background: $bg-light;
+    padding: $spacing-3xl 0;
+    background: $bg-secondary;
     
     .courses-listing {
-        margin-bottom: 48px;
+        margin-bottom: $spacing-2xl;
     }
     
     .view-all-courses {
@@ -310,157 +342,191 @@ section.home {
         .btn-view-all {
             display: inline-flex;
             align-items: center;
-            padding: 16px 32px;
-            background: transparent;
+            padding: $spacing-md $spacing-xl;
+            background: rgba($brand-primary, 0.08);
             color: $brand-primary;
-            border: 2px solid $brand-primary;
-            border-radius: 12px;
-            font-family: $font-family-primary;
-            font-weight: 600;
-            font-size: 16px;
+            border: none;
+            border-radius: $border-radius-xl;
+            font-family: $font-family-ui;
+            font-weight: 500;
+            font-size: $font-size-base;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: background 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(255, 255, 255, 0.3);
+                opacity: 0;
+                transition: opacity 0.2s ease;
+            }
             
             &:hover {
-                background: $brand-primary;
-                color: $white;
-                transform: translateY(-2px);
+                background: rgba($brand-primary, 0.12);
+                color: $brand-primary;
                 text-decoration: none;
+                
+                &::before {
+                    opacity: 1;
+                }
+                
+                > span {
+                    position: relative;
+                    z-index: 1;
+                }
             }
         }
     }
 }
 
 
-// Course Categories Section
+// Swiss Course Categories Section - clean and functional
 .course-categories {
-    padding: 80px 0;
+    padding: $spacing-3xl 0;
     
     .categories-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 32px;
+        gap: $spacing-xl;
         
         .category-card {
             text-align: center;
-            padding: 32px 24px;
-            background: $white;
-            border-radius: 16px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
-            transition: all 0.3s ease;
+            padding: $spacing-2xl $spacing-lg;
+            background: $bg-primary;
+            border-radius: $border-radius-lg;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             text-decoration: none;
             display: block;
             color: inherit;
-            border: 2px solid transparent;
             position: relative;
+            box-shadow: $shadow-sm;
             
-            &::after {
-                content: '→';
+            &::before {
+                content: '';
                 position: absolute;
-                top: 16px;
-                right: 20px;
-                font-size: 18px;
-                color: $brand-primary;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, $accent-bg-primary 0%, $accent-bg-secondary 100%);
+                border-radius: $border-radius-lg;
                 opacity: 0;
-                transition: all 0.3s ease;
-                transform: translateX(-10px);
+                transition: opacity 0.3s ease;
             }
             
             &:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+                transform: translateY(-4px);
                 text-decoration: none;
                 color: inherit;
-                border-color: rgba($brand-primary, 0.2);
+                box-shadow: $shadow-lg;
                 
-                &::after {
+                &::before {
                     opacity: 1;
-                    transform: translateX(0);
+                }
+                
+                > * {
+                    position: relative;
+                    z-index: 1;
                 }
             }
 
             .category-icon {
-                margin-bottom: 20px;
+                margin-bottom: $spacing-lg;
                 display: flex;
                 justify-content: center;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                
+                svg {
+                    width: 48px;
+                    height: 48px;
+                    filter: drop-shadow($shadow-sm);
+                }
             }
             
             h3 {
-                font-family: $font-family-primary;
-                font-size: 20px;
-                font-weight: 600;
-                color: $text-dark;
-                margin-bottom: 8px;
+                font-family: $font-family-heading;
+                font-size: $font-size-lg;
+                font-weight: 500;
+                color: $text-primary;
+                margin-bottom: $spacing-sm;
             }
             
             p {
-                font-size: 14px;
-                color: $text-light;
+                font-size: $font-size-sm;
+                color: $text-secondary;
                 margin: 0;
+                line-height: $line-height-normal;
             }
         }
     }
 }
 
-// Statistics Section
+// Swiss Statistics Section - clean and minimal
 .statistics {
-    padding: 80px 0;
+    padding: $spacing-3xl 0;
     background: $brand-primary;
     
     .stats-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 32px;
+        gap: $spacing-xl;
         
         .stat-item {
             text-align: center;
             
             .stat-number {
-                font-family: $font-family-primary;
-                font-size: 48px;
-                font-weight: 700;
-                color: $white;
-                margin-bottom: 8px;
-                line-height: 1em;
+                font-family: $font-family-heading;
+                font-size: $font-size-3xl;
+                font-weight: 300;
+                color: $bg-primary;
+                margin-bottom: $spacing-sm;
+                line-height: 1;
                 
                 @media (max-width: 768px) {
-                    font-size: 36px;
+                    font-size: $font-size-2xl;
                 }
             }
             
             .stat-label {
-                font-size: 16px;
-                color: rgba($white, 0.8);
-                font-weight: 500;
+                font-size: $font-size-base;
+                color: rgba($bg-primary, 0.9);
+                font-weight: 400;
+                line-height: $line-height-normal;
             }
         }
     }
 }
 
-// Testimonials Section
+// Swiss Testimonials Section - clean and minimal
 .testimonials {
-    padding: 80px 0;
-    background: $bg-light;
+    padding: $spacing-3xl 0;
+    background: $bg-secondary;
     
     .testimonials-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 32px;
+        gap: $spacing-xl;
     
         .testimonial-card {
-            background: $white;
-            padding: 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            background: $bg-primary;
+            padding: $spacing-2xl;
+            border-radius: $border-radius-lg;
+            box-shadow: $shadow-sm;
             
             .testimonial-content {
-                margin-bottom: 24px;
+                margin-bottom: $spacing-lg;
                 
                 p {
-                    font-size: 16px;
-                    line-height: 1.6;
-                    color: $text-dark;
+                    font-size: $font-size-base;
+                    line-height: $line-height-normal;
+                    color: $text-primary;
                     font-style: italic;
                     margin: 0;
                 }
@@ -469,27 +535,27 @@ section.home {
             .testimonial-author {
                 display: flex;
                 align-items: center;
-                gap: 16px;
+                gap: $spacing-md;
                 
                 .author-avatar {
                     width: 48px;
                     height: 48px;
                     border-radius: 50%;
-                    background: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
+                    background: $brand-primary;
                 }
                 
                 .author-info {
                     h4 {
-                        font-family: $font-family-primary;
-                        font-size: 16px;
-                        font-weight: 600;
-                        color: $text-dark;
-                        margin: 0 0 4px;
+                        font-family: $font-family-heading;
+                        font-size: $font-size-base;
+                        font-weight: 500;
+                        color: $text-primary;
+                        margin: 0 0 $spacing-xs;
                     }
                     
                     p {
-                        font-size: 14px;
-                        color: $text-light;
+                        font-size: $font-size-sm;
+                        color: $text-secondary;
                         margin: 0;
                     }
                 }
@@ -498,38 +564,39 @@ section.home {
     }
 }
 
-// Call to Action Section
+// Swiss Call to Action Section - clean and functional
 .cta-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, $brand-primary 0%, darken($brand-primary, 10%) 100%);
+    padding: $spacing-3xl 0;
+    background: $brand-primary;
     
     .cta-content {
         text-align: center;
         
         h2 {
-            font-family: $font-family-primary;
-            font-size: 36px;
-            font-weight: 700;
-            color: $white;
-            margin-bottom: 16px;
+            font-family: $font-family-heading;
+            font-size: $font-size-2xl;
+            font-weight: 300;
+            color: $bg-primary;
+            margin-bottom: $spacing-md;
             
             @media (max-width: 768px) {
-                font-size: 28px;
+                font-size: $font-size-xl;
             }
         }
         
         p {
-            font-size: 18px;
-            color: rgba($white, 0.9);
-            margin-bottom: 32px;
+            font-size: $font-size-lg;
+            color: rgba($bg-primary, 0.9);
+            margin-bottom: $spacing-2xl;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            line-height: $line-height-normal;
         }
         
         .cta-buttons {
             display: flex;
-            gap: 16px;
+            gap: $spacing-md;
             justify-content: center;
             flex-wrap: wrap;
             
@@ -537,38 +604,60 @@ section.home {
             .btn-cta-secondary {
                 display: inline-flex;
                 align-items: center;
-                padding: 16px 32px;
-                border-radius: 12px;
-                font-family: $font-family-primary;
-                font-weight: 600;
-                font-size: 16px;
+                padding: $spacing-md $spacing-xl;
+                border-radius: $border-radius-xl;
+                font-family: $font-family-ui;
+                font-weight: 500;
+                font-size: $font-size-base;
                 text-decoration: none;
-                transition: all 0.3s ease;
+                transition: background 0.2s ease;
+                position: relative;
+                overflow: hidden;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(255, 255, 255, 0.2);
+                    opacity: 0;
+                    transition: opacity 0.2s ease;
+                }
                 
                 &:hover {
                     text-decoration: none;
-                    transform: translateY(-2px);
+                    
+                    &::before {
+                        opacity: 1;
+                    }
+                    
+                    > span {
+                        position: relative;
+                        z-index: 1;
+                    }
                 }
             }
             
             .btn-cta-primary {
                 background: $brand-secondary;
-                color: $text-dark;
+                color: $text-primary;
                 
                 &:hover {
-                    background: lighten($brand-secondary, 10%);
-                    color: $text-dark;
+                    background: lighten($brand-secondary, 8%);
+                    color: $text-primary;
                 }
             }
             
             .btn-cta-secondary {
-                background: transparent;
-                color: $white;
-                border: 2px solid $white;
+                background: rgba($bg-primary, 0.2);
+                color: $bg-primary;
+                border: 1px solid rgba($bg-primary, 0.3);
                 
                 &:hover {
-                    background: $white;
-                    color: $brand-primary;
+                    background: rgba($bg-primary, 0.3);
+                    color: $bg-primary;
                 }
             }
         }

@@ -1,0 +1,21 @@
+<!-- Floating AI Assistant Widget Injection -->
+<!-- This file is intended to be included at the end of the LMS/Studio layout (footer). -->
+<!-- It renders a root element and loads a small JS bundle that mounts the widget. -->
+
+<div id="ai-widget-root" style="position: fixed; right: 20px; bottom: 20px; z-index: 2147483647;"></div>
+
+<!-- Minimal inline fallback (visible if JS bundle fails to load) -->
+<noscript>
+  <style>
+    #ai-widget-root::after {
+      content: 'AI assistant requires JavaScript';
+      background: #222; color: #fff; padding: 8px 12px; border-radius: 8px;
+      font: 14px/1.4 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+  </style>
+</noscript>
+
+<!-- Load your widget bundle from static files. In a theme, place the JS at
+     <theme>/static/ai-widget/ai-widget.js so it is served at /static/ai-widget/ai-widget.js
+     For Tutor: the theme lives under $(tutor config printroot)/env/build/openedx/themes/<your_theme>/ -->
+<script defer src="/static/ai-widget/ai-widget.js"></script>

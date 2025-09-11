@@ -1,6 +1,0 @@
-@import url(./css/core/index.css);
-@import url(./css/themes/light/index.css);
-/* line 9, /openedx/themes/brand-wutiskill2/lms/static/sass/partials/lms/theme/core.scss */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }

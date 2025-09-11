@@ -19,7 +19,7 @@
     text-align: center;
     padding: 40px 16px;
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    border-radius: 20px;
+    border-radius: $border-radius-xl;
     border: 1px solid #e2e8f0;
     
     @include media-breakpoint-up(lg) {
@@ -124,8 +124,8 @@
                 .course {
                     margin: 0;
                     border: 1px solid #e5e7eb;
-                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-                    border-radius: 16px;
+                    box-shadow: $shadow-md;
+                    border-radius: $border-radius-lg;
                     overflow: hidden;
                     background: #fff;
                     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,7 +135,7 @@
                     
                     &:hover {
                         transform: translateY(-4px);
-                        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                        box-shadow: $shadow-lg;
                         border-color: #d1d5db;
                     }
                     
@@ -220,7 +220,7 @@
                             display: inline-flex;
                             align-items: center;
                             justify-content: center;
-                            border-radius: 12px;
+                            border-radius: $border-radius-md;
                             background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
                             text-align: center;
                             padding: 12px 24px;
@@ -231,11 +231,11 @@
                             color: #fff;
                             text-decoration: none;
                             transition: all 0.2s ease;
-                            box-shadow: 0 4px 14px 0 rgba($primary, 0.25);
+                            box-shadow: $shadow-md;
                             
                             &:hover {
                                 transform: translateY(-2px);
-                                box-shadow: 0 6px 20px 0 rgba($primary, 0.35);
+                                box-shadow: $shadow-lg;
                                 color: #fff;
                                 text-decoration: none;
                             }
@@ -322,14 +322,14 @@
                 max-width: 600px;
                 margin: 0 auto;
                 background: $white;
-                border-radius: 12px;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                border-radius: $border-radius-md;
+                box-shadow: $shadow-md;
                 border: none;
                 transition: all 0.3s ease;
                 overflow: hidden;
                 
                 &:focus-within {
-                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba($brand-primary, 0.1);
+                    box-shadow: $shadow-md, 0 0 0 3px rgba($brand-primary, 0.1);
                 }
                 
                 &:after {
@@ -351,7 +351,7 @@
                             fill: #9ca3af;
                         }
                     }
-                
+                    
                     .discovery-input {
                         box-shadow: none;
                         flex: 1;
@@ -385,7 +385,7 @@
                         height: 100%;
                         background: $brand-primary;
                         border: none;
-                        border-radius: 0;
+                        border-radius: 0; // keep square edges to blend seamlessly with wrapper rounding
                         transition: all 0.3s ease;
                         font-family: $font-family-primary;
                         
@@ -400,45 +400,26 @@
                 }
             }
         }
-        .search-status-label {
-            font-size: 14px;
-            line-height: 20px;
-            padding: 10px 0 0;
-            height: auto;
-            min-height: auto;
-            width: 100%;
-            float: none;
-            color: #515661;
-        }
-    }
-}
-.filter-block {
-    flex: 0 0 80px;
-    position: relative;
-    z-index: 9;
-    @include media-breakpoint-up(sm) {
-      flex: 0 0 130px;
     }
     &.show {
         .dropdown-menu {
             display: block;
         }
-    }
-    >a {
-        display: block;
-        background-color: $primary-light;
-        text-decoration: none !important;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 0 16px 0 0;
-        font-weight: 500;
-        padding: 8px 10px;
-        border-radius: 6px;
-        color: #4B5563;
-        &:hover {
-            text-decoration: none;
+        >a {
+            display: block;
+            background-color: $primary-light;
+            text-decoration: none !important;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 16px 0 0;
+            font-weight: 500;
+            padding: 8px 10px;
+            border-radius: $border-radius-sm;
             color: #4B5563;
-        }
+            &:hover {
+                text-decoration: none;
+                color: #4B5563;
+            }
         svg {
             display: inline-block;
             vertical-align: middle;
@@ -450,23 +431,23 @@
                 display: inline;
             }
         }
-    }
-    .dropdown-menu {
-        display: none;
-        width: 200px;
-        left: 0;
-        top: 48px !important;
-        transform: none !important;
-        border-radius: 6px;
-        background: $primary-light;
-        padding: 10px 10px 0;
-        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
-    }
+        .dropdown-menu {
+            display: none;
+            width: 200px;
+            left: 0;
+            top: 48px !important;
+            transform: none !important;
+            border-radius: $border-radius-sm;
+            background: $primary-light;
+            padding: 10px 10px 0;
+            box-shadow: $shadow-md;
+        }
     .search-facets {
         float: none;
         width: 100%;
         margin: 0;
         box-shadow: none;
+{{ ... }}
         background: none;
         h2 {
             display: none;

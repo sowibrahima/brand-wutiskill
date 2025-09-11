@@ -130,7 +130,7 @@ header.global-header {
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
-                border-radius: 8px;
+                border-radius: $border-radius-md;
                 margin: 0 0 0 12px;
                 transition: all 0.2s ease;
                 text-decoration: none;
@@ -167,7 +167,7 @@ header.global-header {
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 20px;
-                border-radius: 8px;
+                border-radius: $border-radius-md;
                 margin: 0 0 0 12px;
                 border: 1px solid #d1d5db;
                 transition: all 0.2s ease;
@@ -220,8 +220,8 @@ header.global-header {
                 right: -12px; // Offset to align with button padding
                 top: calc(100% + 8px); // Position below the button with small gap
                 width: 224px;
-                border-radius: 8px;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                border-radius: $border-radius-md;
+                box-shadow: $shadow-md;
                 border: 1px solid #e5e7eb;
                 background: #ffffff;
                 overflow: hidden;

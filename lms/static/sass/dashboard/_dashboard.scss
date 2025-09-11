@@ -179,7 +179,7 @@
                 text-align: center;
                 padding: 6px;
                 height: 38px;
-                border-radius: 6px;
+                border-radius: $border-radius-sm;
                 background: $primary;
                 font-family: $font-family-title;
                 @include media-breakpoint-up(sm) {
@@ -193,7 +193,7 @@
         }
         .input-holder {
             overflow: hidden;
-            border-radius: 6px;
+            border-radius: $border-radius-sm;
             background: $primary-light;
             padding: 0 0 0 33px;
             position: relative;
@@ -221,11 +221,11 @@
     .main-container {
         .my-courses .listing-courses .course-item .course-container {
             border: none;
-            border-radius: none;
+            border-radius: 0;
             
             .course {
-                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-                border-radius: 16px;
+                box-shadow: $shadow-md;
+                border-radius: $border-radius-lg;
                 overflow: hidden;
                 background: #ffffff;
                 transition: all 0.3s ease;
@@ -233,7 +233,7 @@
                 
                 &:hover {
                     transform: translateY(-4px);
-                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+                    box-shadow: $shadow-lg;
                     border-color: #e5e7eb;
                 }
                 .details {
@@ -276,7 +276,7 @@
                                 right: 0;
                                 min-width: 10px;
                                 .actions-dropdown-list {
-                                    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+                                    box-shadow: $shadow-md;
                                     border: none;
                                     &:after, &:before {
                                         display: none;
@@ -334,7 +334,7 @@
                     }
                     .enter-course {
                         display: block;
-                        border-radius: 6px;
+                        border-radius: $border-radius-sm;
                         background: $primary;
                         text-align: center;
                         padding: 9px 17px;
@@ -430,7 +430,7 @@
                 background: $primary !important;
                 color: #fff;
                 padding: 8px 15px;
-                border-radius: 6px;
+                border-radius: $border-radius-sm;
                 font-weight: 500;
                 font-family: $font-family-title;
             }
