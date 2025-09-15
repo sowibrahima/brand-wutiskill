@@ -1,6 +1,10 @@
 // This file is included after all of Bootstrap. Any customization that can't
 // be made using variable definitions should be done here.
 
+#main {
+  min-height: 90vh;
+}
+
 // Alerts
 
 .alert-dismissible .close {
