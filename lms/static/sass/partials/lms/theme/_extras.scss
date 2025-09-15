@@ -55,11 +55,11 @@ section.wiki .btn.btn-primary {
 }
 
 %btn-pl-default-base {
-  border-radius: $border-radius-md;
+  border-radius: 0;
 }
 
 .btn, .global-header .nav-links .secondary .btn {
-  border-radius: $border-radius-md;
+  border-radius: 0;
 }
 
 %t-title {

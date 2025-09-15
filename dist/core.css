@@ -7,9 +7,9 @@
   --pgn-size-border-radius-base: 0.5rem;
   --pgn-size-border-radius-lg: 0.5rem;
   --pgn-size-border-radius-sm: 0.5rem;
-  --pgn-size-btn-border-radius-base: 12px;
-  --pgn-size-btn-border-radius-lg: 16px;
-  --pgn-size-btn-border-radius-sm: 8px;
+  --pgn-size-btn-border-radius-base: 100px;
+  --pgn-size-btn-border-radius-lg: 100px;
+  --pgn-size-btn-border-radius-sm: 100px;
   --pgn-size-btn-focus-width: 2px;
   --pgn-size-dropdown-border-width: 0;
   --pgn-size-image-thumbnail-border-radius: 0;

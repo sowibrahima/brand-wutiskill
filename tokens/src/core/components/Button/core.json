@@ -17,9 +17,9 @@
     "btn": {
       "border": {
         "radius": {
-          "base": { "$value": "12px", "$type": "dimension", "source": "$btn-border-radius" },
-          "lg": { "$value": "16px", "$type": "dimension", "source": "$btn-border-radius-lg" },
-          "sm": { "$value": "8px", "$type": "dimension", "source": "$btn-border-radius-sm" }
+          "base": { "$value": "100px", "$type": "dimension", "source": "$btn-border-radius" },
+          "lg": { "$value": "100px", "$type": "dimension", "source": "$btn-border-radius-lg" },
+          "sm": { "$value": "100px", "$type": "dimension", "source": "$btn-border-radius-sm" }
         }
       },
       "focus": {

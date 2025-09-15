@@ -366,7 +366,7 @@ a.inline-link {
 // Temporary fix for search fields. See https://github.com/edx/elm-theme/pull/9#issuecomment-723208124
 
 .pgn__searchfield {
-  border-radius: $border-radius-lg !important;
+  border-radius: 0 !important;
   .btn {
     background: $input-bg;
     display: flex;
